@@ -1,0 +1,197 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[type="range"],
+input[type="file"],
+textarea, .form-control {
+    background: transparent;
+    font-size: rem-calc(24);
+    @include border-radius(0);
+    border:none;
+    @include border(bottom,1px,solid,$light-gray);
+    @include transition(all,.3s,linear);
+    padding: 10px 0;
+    width: 100%;
+    color: $dark-gray;
+    &:focus{
+        border-bottom-color: $primary;
+        box-shadow: none;
+        outline: none;
+        outline-offset: none;
+    }
+}
+
+.footer-form{
+    .form-wrapper{
+        .form-floating{
+            margin-bottom: 24px;
+            @include breakpoint(md) {
+                margin-bottom: 32px;
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="color"],
+        input[type="date"],
+        input[type="datetime-local"],
+        input[type="email"],
+        input[type="month"],
+        input[type="number"],
+        input[type="range"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="time"],
+        input[type="url"],
+        input[type="week"],
+        input[type="range"],
+        input[type="file"],
+        textarea, .form-control {
+            @include border(bottom,1px,solid,$light-gray);
+            &:focus{
+                border-bottom-color: $primary;
+                box-shadow: none;
+                outline: none;
+                outline-offset: none;
+            }
+        }
+    }
+}
+
+textarea, textarea.form-control, .form-floating > textarea.form-control{
+    resize: none;
+    height: 136px;
+    @include breakpoint(md) {
+        height: 185px;
+    }
+}
+
+.form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > label{
+    padding: 10px 0;
+}
+
+.form-floating > label{
+    font-size: rem-calc(24);
+}
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label{
+    color: $dark-gray;
+    font-size: rem-calc(12);
+    transform:scale(1) translateY(-10px) translateX(0);
+}
+button:focus:not(:focus-visible){
+    box-shadow: none;
+}
+
+.form-check{
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+.css-checkbox, .css-radio {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+
+.css-checkbox + label, .css-radio + label {
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    color: $dark-gray;
+    @include breakpoint(xxl){
+        font-size: 18px;
+        height: 24px;
+    }
+}
+
+.css-checkbox + label::before, .css-radio + label::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $black;
+    border-radius: 0px;
+    box-shadow: none;
+    @include transition(all,.3s,linear);
+    @include breakpoint(xxl){
+        width: 24px;
+        height: 24px;
+    }
+}
+.css-radio + label::before{
+    @include border-radius(50%);
+}
+.css-checkbox:checked + label::before{
+    background-color: $primary;
+    border-color:$primary;
+}
+.css-checkbox:checked + label::after {
+    content: " ";
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.55295 11.573C5.36764 11.5704 5.18996 11.4988 5.0548 11.372L0.160698 6.47786C0.0492079 6.34201 -0.0077678 6.16956 0.000852866 5.99403C0.00947353 5.81851 0.0830741 5.65246 0.207339 5.5282C0.331603 5.40393 0.497647 5.33033 0.673172 5.32171C0.848697 5.31309 1.02115 5.37007 1.157 5.48156L5.55295 9.88625L14.843 0.587456C14.9788 0.475966 15.1513 0.41899 15.3268 0.427611C15.5024 0.436231 15.6684 0.509832 15.7927 0.634097C15.9169 0.758361 15.9905 0.924405 15.9991 1.09993C16.0078 1.27545 15.9508 1.44791 15.8393 1.58375L6.0511 11.372C5.91594 11.4988 5.73826 11.5704 5.55295 11.573Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    left: 3px;
+    top: 5px;
+    text-align: center;
+    background-color: transparent;
+    height: 10px;
+    width: 14px;
+     @include breakpoint(xxl){
+        height: 11px;
+        width: 16px;
+         left: 4px;
+        top: 6px;
+    }
+}
+
+.css-radio + label::after {
+    content: " ";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    left: 5px;
+    top: 5px;
+    text-align: center;
+    height: 14px;
+    width: 14px;
+    background: $primary;
+    @include border-radius(50%);
+    @include transition(all,.3s,linear);
+    opacity: 0;
+}
+
+.css-radio:checked + label::after {
+    opacity: 1;
+}

@@ -1,0 +1,74 @@
+// guttnerburge default button
+$btn-bg: var(--primary);
+.wp-block-button{
+   &__link {
+        background-color: $btn-bg;
+        color:$white;
+        font-size:$font-size-base;
+        line-height: 1.5;
+        padding:rem-calc(7 12);
+        font-weight:500;
+        @include transition;
+
+
+    }
+    &.is-style-outline  {
+        .wp-block-button__link{
+            padding:rem-calc(5 12);
+            border-color:var(--primary);
+            color:var(--primary);
+            &:hover {
+                background-color: var(--primary);
+                color:$white;
+            }
+        }
+    }
+}
+
+
+// theme button
+.btn {
+    @include transition(all,.3s,linear);
+    @include border(all,1px,solid,transparent);
+    @include border-radius(0);
+    text-align: center;
+    padding: 15px;
+    // min-width: 100%;
+    font-family: $mono;
+    font-weight: $medium;
+    font-size: rem-calc(14);
+    line-height: rem-calc(14);
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-gray;
+    @include breakpoint(md){
+        min-width: 136px;
+    }
+    &:hover{
+        @include border(all,1px,solid,transparent);
+    }
+    &.btn-primary{
+        &:hover{
+            background: $dark-gray;
+            color: $primary;
+        }
+    }
+    &.btn-alt{
+        background: $alt;
+        &:hover{
+            background: $dark-gray;
+            color: $alt;
+        }
+    }
+    
+    &:focus{
+      box-shadow: none;
+    }
+    &.btn-outline{
+        @include border(all,1px,solid,$dark-gray);
+        &:hover{
+            background: $dark-gray;
+            color: $alt;
+        }
+    }
+}
