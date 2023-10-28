@@ -1,96 +1,39 @@
 body{
-    // overflow: hidden;
     font-family: $font;
-    font-size: rem-calc(14);
-    line-height: rem-calc(22);
-    color: $dark-gray;
     @include breakpoint(lg){
-        font-size: rem-calc(18);
-        line-height: rem-calc(28);
     }
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   margin: 0;
-  font-family: $mono;
-  font-weight: $bold;
-  span{
-    font-weight: $regular;
-  }
-
 }
 h1,.h1{
-    font-size: rem-calc(42);
-    line-height: rem-calc(40);
      @include breakpoint(xxxl){
-        font-size: rem-calc(90);
-        line-height: rem-calc(80);
     } 
 }
 h2,.h2{
-    font-size: rem-calc(32);
-    line-height: rem-calc(30);
+    
     @include breakpoint(xxxl){
-        font-size: rem-calc(60);
-        line-height: rem-calc(56);
     }
 }
 h3,.h3{
-    font-size: rem-calc(28);
-    line-height: rem-calc(30);
     @include breakpoint(xxxl){
-        font-size: rem-calc(48);
-        line-height: rem-calc(56);
     }
 }
 h4,.h4{
-    font-size: rem-calc(18);
-    line-height: rem-calc(24);
     @include breakpoint(xxxl){
-         font-size: rem-calc(32);
-         line-height: rem-calc(42);
     }
 }
 
 h5, .h5{
-    font-size: rem-calc(12);
-    line-height: rem-calc(20);
-    font-weight: $medium;
     @include breakpoint(xxxl){
-        font-size: rem-calc(18);
-        line-height: rem-calc(24);
     }
 }
 
-h6,.h6, .sub-title{
-    font-size: rem-calc(16);
-    line-height: rem-calc(24);
-    font-weight: $light_wgt;
+h6,.h6{
     @include breakpoint(xxxl){
-        font-size: rem-calc(18);
-        line-height: rem-calc(32);
     }
 }
 
-.quote-font-1{
-    font-size: rem-calc(26);
-    line-height: rem-calc(32);
-    color: $dark-gray;
-    @include breakpoint(lg) {
-        font-size: rem-calc(48);
-        line-height: rem-calc(60);
-    }
-}
-
-.sub-title{
-    font-size: rem-calc(16);
-    line-height: rem-calc(24);
-    color: $gray;
-    font-family: $mono;
-    @include breakpoint(lg) {
-        font-size: rem-calc(18);
-        line-height: rem-calc(32);
-    }
-}
 
 img, svg {
     max-width:100%;
@@ -102,23 +45,16 @@ svg{
         @include transition(all,.3s,linear);
     }
 }
-.font-thin{
-    font-weight: $thin;
-}
 p{
-    margin-bottom: rem-calc(16);
-    color: $gray;
+    
     &:last-child{
         margin-bottom: 0;
     }
 }
 a{
-    text-decoration: none;
-    color: $dark-gray;
+   
     @include transition(all,.2s,linear);
-    strong{
-        @include transition(all,.3s,linear);
-    }
+    
     &:hover{
 
         text-decoration: none;
@@ -140,91 +76,29 @@ img{
     display: block;
     object-fit: cover;
 }
-main{
-    overflow: hidden;
-}
+
 .container{
-    padding: 0 32px;
+    padding: 0 18px;
     @include breakpoint(md){
-        max-width: 764px;
-        padding: 0 15px;
+        
     }
     @include breakpoint(lg){
-        max-width: 960px;
+        
     }
     @include breakpoint(xl){
-        max-width: 1140px;
+        
     }
     @include breakpoint(xxl){
-        max-width: 1262px;
-    }
-    @include breakpoint(xxxl){
-        max-width: 1590px;
-    }
-}
-
-.wbg-primary{
-    background: $primary;
-}
-.wbg-alt{
-    background: $alt;
-}
-.wbg-acc{
-    background: $acc;
-}
-.wbg-white{
-    background: $white;
-}
-.wbg-black{
-    background: $black;
-}
-.wbg-dark-gray{
-    background: $dark-gray;
-}
-.wbg-gray{
-    background: $gray;
-}
-.wbg-light-gray{
-    background: $light-gray;
-}
-
-.py-100{
-    margin: -100px 0;
-}
-
-.section{
-    padding: 40px 0;
-    @include breakpoint(md){
-        padding: 64px 0;
-    }
-    @include breakpoint(lg){
-        padding: 120px 0;
-    }
-    @include breakpoint(xxxl){
-        padding: 120px 0;
-    }
-}
-.section-title{
-    margin-bottom: 32px;
-    @include breakpoint(md) {
-        margin-bottom: 26px;
-    }
-    @include breakpoint(lg) {
-        margin-bottom: 32px;
-    }
-    @include breakpoint(xxl) {
-        margin-bottom: 64px;
-    }
-    @include breakpoint(xxxl) {
-        margin-bottom: 80px;
+        max-width: 1356px;
+    
     }
 }
 
 
 
-.content{
+
+.detail-content{
     *{
-        margin-bottom: 16px;
         &:last-child{
             margin-bottom: 0;
         }
@@ -248,399 +122,169 @@ main{
             }
         }
     }
-    a.btn{
-        margin-top: 16px;
-    }
     blockquote{
-        font-size: rem-calc(26);
-        line-height: rem-calc(32);
-        font-weight: $medium;
-        @include breakpoint(xl){
-            font-size: rem-calc(48);
-            line-height: rem-calc(60);
-        }
-    }
-}
-
-.content-area{
-    .section-title{
-            margin-bottom: 24px;
-    }
-}
-
-
-
-
-.postion-list{
-    ul{
-        li{
-            position: relative;
-            padding: 30px 0;
-            @include breakpoint(md){
-                
-                padding: 48px 0;
-            }
-            @include breakpoint(xxl){
-                width: 865px;
-                margin: 0 auto;
-                padding: 32px 0;
-            }
-            @include breakpoint(xxxl){
-                 width: 50%;
-                 margin: 0;
-                padding: 69px 0;
-            }
-            &:after{
-                content: '';
-                left: -999em;
-                right: -999em;
-                bottom: 0;
-                position: absolute;
-                background: $light-gray;
-                height: 1px;
-            }
-            .position-icon{
-                width: 50px;
-                height: 50px;
-                @include breakpoint(md){
-                    width: 112px;
-                    height: 112px;
-                }
-                @include breakpoint(xxl){
-                    width: 170px;
-                    height: 170px;
-                }
-                @include breakpoint(xxxl){
-                    width: 200px;
-                    height: 200px;
-                }
-                img,svg{
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .position-detail{
-                width: calc(100% - 50px - 15px);
-                margin-left: 15px;
-                @include breakpoint(md){
-                    width: 592px;
-                    margin-left: 48px;
-                }
-                @include breakpoint(xxl){
-                    width: calc(100% - 170px - 100px);
-                    margin-left: 100px;
-                }
-                @include breakpoint(xxxl){
-                    width: calc(100% - 200px - 80px);
-                    margin-left: 80px;
-                }
-                h4{
-                    @include breakpoint(md){
-                        margin-bottom: 30px;
-                    }
-                }
-            }
-            div + a{
-                min-width: auto;
-                margin-top: 15px;
-            }
-        }
-    }
-}
-
-.d-xxxl-flex{
-    @include breakpoint(xxxl){
-        display: flex;
-    }
-}
-
-.contact-info-wrap{
-    .info{
-        margin-bottom: 48px;
-        @include breakpoint(md) {
-            margin-bottom: 32px;
-        }
-        @include breakpoint(xxl) {
-            margin-bottom: 56px;
-        }
-        h4{
-            margin-bottom: 10px;
-            @include breakpoint(xxl) {
-                margin-bottom: 16px;
-            }
-        }
-        &:last-child{
-            @include breakpoint(md) {
-                margin-bottom: 0;
-            }
-            @include breakpoint(xxl) {
-                margin-bottom: 56px;
-            }
-        }
-    }
-    .social-media-list{
-        ul{
-            margin-left: -24px;
-            li{
-                margin-left: 24px;
-                width: 16px;
-                height: 16px;
-                @include breakpoint(md) {
-                    width: 20px;
-                    height: 20px;
-                }
-                @include breakpoint(xxl) {
-                    width: 28px;
-                    height: 28px;
-                }
-                img,svg{
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .form-wrapper{
-        margin-bottom: 56px;
-        @include breakpoint(md){
-            margin-bottom: 64px;
-        }
-        @include breakpoint(xl){
-            margin-bottom: 0;
-        }
-    }
-}
-.form-wrapper{
-    input[type=text], input[type=email], input[type=password], input[type=color], input[type=date], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=range], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=range], input[type=file], textarea{
-        border-color: $dark-gray;
-        &:focus{
-            background: transparent;
-        }
-    }
-    .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label{
-        color: $dark-gray;
-    }
-    .form-floating{
-        margin-bottom: 24px;
-        @include breakpoint(md) {
-            margin-bottom: 32px;
-        }
-        @include breakpoint(xxl) {
-            margin-bottom: 48px;
-        }
-    }
-}
-.contact-info{
-    @include breakpoint(xl) {
-        @include border(right,1px,solid,$dark-gray);
-    }
-}
-
-.with-bg-img{
-    position: relative;
-    background-image: url('assets/dist/images/half-circle-lg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    // background-position: 0 -975px;
-    
-}
-
-.not-found{
-    h1{
-        font-size: 136px;
-        @include breakpoint(md){
-            font-size: 200px;
-        }
-        @include breakpoint(xxl){
-            font-size: 256px;
-        }
-        @include breakpoint(xxl){
-            font-size: 304px;
-        }
-        img, svg{
-            margin: 0 15px;
-            width: 92px;
-            height: 94px;
-            @include breakpoint(md){
-                width: 131px;
-                height: 134px;
-            }
-            @include breakpoint(xxl){
-                width: 178px;
-                height: 182px;
-            }
-            @include breakpoint(xxl){
-                width: 227px;
-                height: 234px;
-            }
-        }
-    }
-}
-
-.web-styles{
-    .style-property{
-        margin-bottom: 32px;
-        width: 120px;
-        margin-right: 30px;
-        &:last-child{
-            margin-right: 0;
-        }
-        ul{
-            margin: 0;
-            padding: 0;
-        }
-        &.drop-shadow{
-            box-shadow: 6px 6px 32px rgba(15, 15, 15, 0.05);
-        }
-    }
-}
-
-.color-box.style-property{
-    width: 50px;
-    height: 50px !important;
-    @include breakpoint(md){
-        width: 80px;
-        height: 80px !important;
-    }
-    @include breakpoint(xxl){
-        width: 160px;
-        height: 160px !important;
-    }
-    &.first{
-        height: auto !important;
-    }
-}
-.style-title{
-    padding-bottom: 32px;
-    margin-bottom: 32px;
-    @include border(bottom,1px,solid,$light-gray);
-}
-
-.laad-meer-btn{
-    margin-top: 48px;
-    @include breakpoint(xl){
-        margin-top: 48px;
-    }
-    @include breakpoint(xxxl){
-        margin-top: 56px;
-    }
-}
-.publicities-list-wrap{
-    .date{
-        margin-bottom: 8px;
-        font-family: $mono;
-        font-size: 12px;
-    }
-}
-.publicities-list{
-    li{
-        margin-bottom: 32px;
-        @include breakpoint(xxl){
-            margin-bottom: 48px;
-        }
-        @include breakpoint(xxxl){
-            margin-bottom: 56px;
-        }
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
-    .publicities-img{
-        height: 240px;
-        margin-bottom: 16px;
-        @include breakpoint(md) {
-            width: 272px;
-            height: 272px;
-            margin-bottom: 0;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .publicities-detail{
-        @include breakpoint(md) {
-            width: calc(100% - 272px - 32px);
-            margin-left: 32px;
-        }
         
-        h4{
-            margin-bottom: 12px;
-        }
-        p{
-            margin-bottom: 24px;
-            max-width: 400px;
-        }
     }
 }
-.event-list{
-    margin-top: 40px;
-    padding-top: 40px;
-    position: relative;
-    &:after{
-        content:'';
-        position: absolute;
-        height: 1px;
-        left: -999em;
-        right: -999em;
-        background: $light-gray;
-        top: 0;
-         @include breakpoint(xl){
-            display: none;
-        }
-    }
-    @include breakpoint(md){
-        margin-top: 64px;
-        padding-top: 64px;
-    }
-    @include breakpoint(xl){
-        margin-top: 0;
-        padding-top: 0;
-    }
-    ul{
-        @include breakpoint(md){
-            margin-left: -56px;
-        }
-        @include breakpoint(xl){
-            margin-left: 0;
-        }
-        li{
-            padding-bottom: 24px;
-            margin-bottom: 24px;
-            @include border(bottom,1px,solid,$light-gray);
-            &:last-child{
-                margin-bottom: 0;
-            }
-            @include breakpoint(md){
-                width: calc(50% - 56px);
-                margin-left: 56px;
-            }
-            @include breakpoint(xl){
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-    }
-    h4{
-        margin-bottom: 32px;
-    }
-    .date{
-        margin-bottom: 0;
-    }
-    h5{
-        color: $primary;
-        a{
-            color: $primary;
-            &:hover{
-                color: $dark-gray;
-            }
-        }
-    }
-    a.font-sm{
-        font-size: 12px;
-        font-family: $mono;
-        text-decoration: underline;
-        &:hover{
-            color: $primary;
-        }
-    }
+
+/* 
+   ========================================================================== */
+/* BACKGROUND
+   ========================================================================== */
+.bg-black{
+    background: $black;
 }
+.bg-white{
+    background: $white;
+}
+.bg-gray-900{
+    background: $gray-900;
+}
+.bg-gray-900{
+    background: $gray-700;
+}
+.bg-gray-500{
+    background: $gray-500;
+}
+.bg-gray-400{
+    background: $gray-400;
+}
+.bg-gray-300{
+    background: $gray-300;
+}
+.bg-gray-200{
+    background: $gray-200;
+}
+.bg-div-900{
+    background: $div-900;
+}
+.bg-div-700{
+    background: $div-700;
+}
+.bg-div-900{
+    background: $div-500;
+}
+.bg-sport-900{
+    background: $sport-900;
+}
+.bg-sport-700{
+    background: $sport-700;
+}
+.bg-sport-500{
+    background: $sport-500;
+}
+.bg-hb-900{
+    background: $hb-900;
+}
+.bg-hb-700{
+    background: $hb-700;
+}
+.bg-hb-500{
+    background: $hb-500;
+}
+.bg-training-900{
+    background: $training-900;
+}
+.bg-training-700{
+    background: $training-700;
+}
+.bg-training-500{
+    background: $training-500;
+}
+.bg-green-success{
+    background: $green-success;
+}
+.bg-red-error{
+    background: $red-error;
+}
+
+
+/* TEXT COLORS
+   ========================================================================== */
+.text-black{
+    color: $black;
+}
+.text-white{
+    color: $white;
+}
+.text-gray-900{
+    color: $gray-900;
+}
+.text-gray-900{
+    color: $gray-700;
+}
+.text-gray-500{
+    color: $gray-500;
+}
+.text-gray-400{
+    color: $gray-400;
+}
+.text-gray-300{
+    color: $gray-300;
+}
+.text-gray-200{
+    color: $gray-200;
+}
+.text-div-900{
+    color: $div-900;
+}
+.text-div-700{
+    color: $div-700;
+}
+.text-div-900{
+    color: $div-500;
+}
+.text-sport-900{
+    color: $sport-900;
+}
+.text-sport-700{
+    color: $sport-700;
+}
+.text-sport-500{
+    color: $sport-500;
+}
+.text-hb-900{
+    color: $hb-900;
+}
+.text-hb-700{
+    color: $hb-700;
+}
+.text-hb-500{
+    color: $hb-500;
+}
+.text-training-900{
+    color: $training-900;
+}
+.text-training-700{
+    color: $training-700;
+}
+.text-training-500{
+    color: $training-500;
+}
+.text-green-success{
+    color: $green-success;
+}
+.text-red-error{
+    color: $red-error;
+}
+
+/* FONT WEIGHT
+   ========================================================================== */
+.wgt-400{
+    font-weight: 400;
+}
+.wgt-500{
+    font-weight: 500;
+}
+.wgt-700{
+    font-weight: 700;
+}
+.wgt-900{
+    font-weight: 900;
+}
+
+
+
+
+
+

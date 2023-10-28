@@ -1,74 +1,98 @@
-// guttnerburge default button
-$btn-bg: var(--primary);
-.wp-block-button{
-   &__link {
-        background-color: $btn-bg;
-        color:$white;
-        font-size:$font-size-base;
-        line-height: 1.5;
-        padding:rem-calc(7 12);
-        font-weight:500;
-        @include transition;
-
-
-    }
-    &.is-style-outline  {
-        .wp-block-button__link{
-            padding:rem-calc(5 12);
-            border-color:var(--primary);
-            color:var(--primary);
-            &:hover {
-                background-color: var(--primary);
-                color:$white;
-            }
-        }
-    }
-}
-
-
 // theme button
 .btn {
-    @include transition(all,.3s,linear);
-    @include border(all,1px,solid,transparent);
-    @include border-radius(0);
+    padding: 19px 12px;
     text-align: center;
-    padding: 15px;
-    // min-width: 100%;
-    font-family: $mono;
+    line-height: 150%;
+    font-size: rem-calc(15);
+    color: $white;
     font-weight: $medium;
-    font-size: rem-calc(14);
-    line-height: rem-calc(14);
-    text-align: center;
-    text-transform: uppercase;
-    color: $dark-gray;
-    @include breakpoint(md){
-        min-width: 136px;
+    background: $gray-900;
+    border-radius: rem-calc(3px);
+    border: none;
+    box-shadow: inset 0 -2px 0 rgba($gray-900,.125);
+    @include transition(all,.3s,linear);
+    @include breakpoint(sm){
+        // font-size: rem-calc(14);
+    }
+    @include breakpoint(xl){
+        // font-size: rem-calc(15);
+        
     }
     &:hover{
-        @include border(all,1px,solid,transparent);
+        // background: $gray-700;
+        color: $white;
+        border: none;
+        box-shadow: inset 0 0 0 rgba($gray-900,.5);
     }
-    &.btn-primary{
+    &.btn-blue{
+        background: $div-500;
         &:hover{
-            background: $dark-gray;
-            color: $primary;
+            // background: $div-700;
         }
     }
-    &.btn-alt{
-        background: $alt;
+
+    &.btn-green{
+        background: $sport-500;
         &:hover{
-            background: $dark-gray;
-            color: $alt;
+            // background: $div-700;
         }
     }
-    
+
+    &.btn-orange{
+        background: $hb-500;
+        &:hover{
+            // background: $div-700;
+        }
+    }
+    &.btn-pink{
+        background: $training-500;
+        &:hover{
+            // background: $div-700;
+        }
+    }
+    &.btn-white{
+        background: $gray-200;
+        color: $gray-700;
+        &:hover{
+            // background: $div-700;
+        }
+    }
+    &.btn-gray{
+        background: $gray-300;
+        color: $gray-500;
+        &:hover{
+            // background: $div-700;
+        }
+    }
+   
     &:focus{
       box-shadow: none;
     }
-    &.btn-outline{
-        @include border(all,1px,solid,$dark-gray);
-        &:hover{
-            background: $dark-gray;
-            color: $alt;
+    &.btn-post-icon, &.btn-pre-icon{
+        display: inline-flex;
+        align-items: center;
+        img,svg{
+            @include transition(all,.3s,linear);
         }
     }
+
+    &.btn-post-icon{
+        img,svg{
+            margin-left: rem-calc(12);
+        }
+    }
+    &.btn-pre-icon{
+        img,svg{
+            margin-right: rem-calc(12);
+        }
+    }
+    &.btn-sm{
+        padding: 12px;
+        font-size: rem-calc(14);
+    }
+    &.btn-xs{
+        padding: 9px 12px;
+        font-size: rem-calc(13);
+    }
+   
 }

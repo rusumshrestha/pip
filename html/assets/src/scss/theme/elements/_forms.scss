@@ -16,59 +16,16 @@ input[type="week"],
 input[type="range"],
 input[type="file"],
 textarea, .form-control {
-    background: transparent;
-    font-size: rem-calc(24);
-    @include border-radius(0);
-    border:none;
-    @include border(bottom,1px,solid,$light-gray);
     @include transition(all,.3s,linear);
     padding: 10px 0;
     width: 100%;
-    color: $dark-gray;
     &:focus{
-        border-bottom-color: $primary;
         box-shadow: none;
         outline: none;
         outline-offset: none;
     }
 }
 
-.footer-form{
-    .form-wrapper{
-        .form-floating{
-            margin-bottom: 24px;
-            @include breakpoint(md) {
-                margin-bottom: 32px;
-            }
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="color"],
-        input[type="date"],
-        input[type="datetime-local"],
-        input[type="email"],
-        input[type="month"],
-        input[type="number"],
-        input[type="range"],
-        input[type="search"],
-        input[type="tel"],
-        input[type="time"],
-        input[type="url"],
-        input[type="week"],
-        input[type="range"],
-        input[type="file"],
-        textarea, .form-control {
-            @include border(bottom,1px,solid,$light-gray);
-            &:focus{
-                border-bottom-color: $primary;
-                box-shadow: none;
-                outline: none;
-                outline-offset: none;
-            }
-        }
-    }
-}
 
 textarea, textarea.form-control, .form-floating > textarea.form-control{
     resize: none;
@@ -78,26 +35,11 @@ textarea, textarea.form-control, .form-floating > textarea.form-control{
     }
 }
 
-.form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > label{
-    padding: 10px 0;
-}
 
-.form-floating > label{
-    font-size: rem-calc(24);
-}
-.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label{
-    color: $dark-gray;
-    font-size: rem-calc(12);
-    transform:scale(1) translateY(-10px) translateX(0);
-}
 button:focus:not(:focus-visible){
     box-shadow: none;
 }
 
-.form-check{
-    padding-left: 0;
-    margin-bottom: 40px;
-}
 .css-checkbox, .css-radio {
     position: absolute;
     overflow: hidden;
@@ -117,7 +59,6 @@ button:focus:not(:focus-visible){
     display: inline-flex;
     align-items: center;
     height: 20px;
-    color: $dark-gray;
     @include breakpoint(xxl){
         font-size: 18px;
         height: 24px;
@@ -147,8 +88,8 @@ button:focus:not(:focus-visible){
     @include border-radius(50%);
 }
 .css-checkbox:checked + label::before{
-    background-color: $primary;
-    border-color:$primary;
+    background-color: $black;
+    border-color:$black;
 }
 .css-checkbox:checked + label::after {
     content: " ";
@@ -186,7 +127,7 @@ button:focus:not(:focus-visible){
     text-align: center;
     height: 14px;
     width: 14px;
-    background: $primary;
+    background: $black;
     @include border-radius(50%);
     @include transition(all,.3s,linear);
     opacity: 0;
