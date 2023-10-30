@@ -1,0 +1,82 @@
+[class*="overlay-"]{
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
+.overlay-diversity{
+	&:after{
+		background: rgba($div-500,.67);
+	}
+}
+.overlay-sport{
+	&:after{
+		background: rgba($sport-500,.67);
+	}
+}
+.overlay-health-wellbeing{
+	&:after{
+		background: rgba($hb-500,.67);
+	}
+}
+.section-member{
+	@include breakpointMax(lg){
+		padding: 0;
+	}
+	.container-lg{
+		@include breakpointMax(lg){
+			padding: 0;
+		}
+	}
+}
+.member-block{
+	margin: 0 auto;
+	padding: 180px 18px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	@include breakpoint(lg){
+		width: 100%;
+		padding: 50px;
+	}
+	@include breakpoint(xl){
+		padding: 120px 100px;
+	}
+	@include breakpoint(xxl){
+		width: 1296px;
+		padding: 120px 186px;
+	}
+	.member-title, .member-content{
+		position: relative;
+		z-index: 1;
+		@include breakpoint(lg){
+			width: calc(50% - 18px);
+		}
+	}
+	.member-title{
+		@include breakpoint(lg){
+			margin-right: 36px;
+		}
+
+	}
+	*{
+		color: $white;
+	}
+	h1{
+		font-size: rem-calc(45);
+		font-weight: $eblack;
+		@include breakpoint(xl){
+			font-size: rem-calc(57);
+		}
+	}
+	p{
+		font-size: rem-calc(17);
+		font-weight: $medium;
+		margin-bottom: 36px;
+	}
+}

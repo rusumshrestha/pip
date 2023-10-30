@@ -1,0 +1,10 @@
+.custom-modal{
+	.modal-dialog{
+		max-width: 1090px;
+	}
+	.modal-body, .modal-content{
+		border-radius: 0;
+		padding: 0;
+		background: none;
+	}
+}

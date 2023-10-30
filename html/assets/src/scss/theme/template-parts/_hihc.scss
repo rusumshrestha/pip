@@ -1,0 +1,57 @@
+.section-hihc{
+	.h-image{
+		margin-bottom: 27px;
+		padding: 0;
+		@include breakpoint(md){
+			padding: 0 18px;
+		}
+		@include breakpoint(lg){
+			margin-bottom: 0;
+			width: 425px;
+			margin-right: 74px;
+		}
+		@include breakpoint(xl){
+			width: 546px;
+			margin-right: 78px;
+		}
+		@include breakpoint(xxl){
+			margin-right: 144px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.h-content{
+		@include breakpoint(lg){
+			width: 425px;
+		}
+		@include breakpoint(xl){
+			width: 492px;
+		}
+		p + a{
+			margin-top: 36px;
+		}
+	}
+	&.rtl{
+		.h-image{
+			margin-right: 0;
+			@include breakpoint(lg){
+				margin-left: 74px;
+			}
+			@include breakpoint(xl){
+				margin-left: 78px;
+			}
+			@include breakpoint(xxl){
+				margin-left: 144px;
+			}
+			@include breakpoint(md){
+				order: 2;
+			}
+		}
+		.h-content{
+			@include breakpoint(md){
+				order: 1;
+			}
+		}
+	}
+}
