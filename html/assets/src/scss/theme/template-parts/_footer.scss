@@ -1,0 +1,18 @@
+footer{
+	position: relative;
+	background: $div-900;
+	padding:90px 0;
+
+	&:before{
+		content:'';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 6px;
+		@include rainbow();
+	}
+	p{
+		color: $gray-400;
+	}
+}

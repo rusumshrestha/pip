@@ -12077,6 +12077,7 @@ p:last-child {
 
 a {
   transition: all 0.2s linear;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
@@ -12337,6 +12338,15 @@ img {
 
 .section {
   padding: 90px 0;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    margin-bottom: 54px;
+  }
 }
 
 input[type=text],
@@ -12817,5 +12827,30 @@ button:focus {
   font-size: 1.0625rem;
   font-weight: 500;
   margin-bottom: 36px;
+}
+
+.partner-list ul {
+  margin-top: -24px;
+}
+.partner-list ul li {
+  margin-top: 24px;
+}
+
+footer {
+  position: relative;
+  background: #02202E;
+  padding: 90px 0;
+}
+footer:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 6px;
+  background: var(--Rainbow, linear-gradient(90deg, #00A6E9 24.83%, #11B86C 49.65%, #F26322 74.48%));
+}
+footer p {
+  color: #B2B6B8;
 }
 /*# sourceMappingURL=style.css.map */

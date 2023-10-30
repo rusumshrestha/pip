@@ -58,7 +58,7 @@ p{
 a{
    
     @include transition(all,.2s,linear);
-    
+    text-decoration: none;
     &:hover{
 
         text-decoration: none;
@@ -298,3 +298,9 @@ img{
     padding: 90px 0;
 }
 
+.section-title{
+    margin-bottom: 30px;
+    @include breakpoint(md){
+        margin-bottom: 54px;
+    }
+}
