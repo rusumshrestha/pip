@@ -12840,6 +12840,7 @@ footer {
   position: relative;
   background: #02202E;
   padding: 90px 0;
+  font-size: 0.8125rem;
 }
 footer:before {
   content: "";
@@ -12852,5 +12853,108 @@ footer:before {
 }
 footer p {
   color: #B2B6B8;
+}
+footer a {
+  color: #B2B6B8;
+  font-size: 0.875rem;
+}
+footer a:hover {
+  color: #F5F7F7;
+}
+
+.top-footer {
+  padding-bottom: 90px;
+  position: relative;
+}
+.top-footer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--Rainbow, linear-gradient(90deg, #00A6E9 24.83%, #11B86C 49.65%, #F26322 74.48%));
+  height: 2px;
+  opacity: 0.5;
+}
+
+.footer-menu {
+  width: 165px;
+  margin-right: 36px;
+}
+.footer-menu:last-child {
+  margin-right: 0;
+}
+.footer-menu ul {
+  margin-top: -18px;
+}
+.footer-menu ul li {
+  margin-top: 18px;
+}
+.footer-menu.footer-main-menu ul li a {
+  color: #FFFFFF;
+}
+.footer-menu.footer-main-menu ul li a:hover {
+  color: #F5F7F7;
+}
+
+.footer-contact-area p {
+  color: #F5F7F7;
+}
+.footer-contact-area p span {
+  color: #B2B6B8;
+}
+.footer-contact-area ul {
+  margin-top: -10px;
+}
+.footer-contact-area ul li {
+  margin-top: 10px;
+}
+.footer-contact-area ul li a {
+  color: #F5F7F7;
+}
+.footer-contact-area ul li a:hover {
+  color: #FFFFFF;
+}
+.footer-contact-area ul li img, .footer-contact-area ul li svg {
+  margin-right: 10px;
+}
+
+.mid-footer {
+  padding: 48px 0 36px;
+  margin-bottom: 36px;
+}
+.mid-footer .program-area .program-content {
+  margin-top: 36px;
+}
+.mid-footer .program-area p {
+  max-width: 480px;
+}
+.mid-footer .info-area ul {
+  margin-top: -24px;
+}
+.mid-footer .info-area ul li {
+  margin-top: 24px;
+}
+.mid-footer .info-area .info-icon {
+  width: 72px;
+  margin-right: 36px;
+}
+.mid-footer .info-area .info-icon img, .mid-footer .info-area .info-icon svg {
+  width: 100%;
+}
+.mid-footer .info-area .info-content {
+  width: calc(100% - 108px);
+}
+
+.bottom-footer p {
+  font-size: 0.6875rem;
+  color: #848889;
+  line-height: 150%;
+}
+.bottom-footer p span {
+  color: #B2B6B8;
+}
+.bottom-footer p span a {
+  font-size: 0.6875rem;
 }
 /*# sourceMappingURL=style.css.map */

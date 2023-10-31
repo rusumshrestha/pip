@@ -2,7 +2,7 @@ footer{
 	position: relative;
 	background: $div-900;
 	padding:90px 0;
-
+	font-size: rem-calc(13);
 	&:before{
 		content:'';
 		position: absolute;
@@ -14,5 +14,119 @@ footer{
 	}
 	p{
 		color: $gray-400;
+	}
+	a{
+		color: $gray-400;
+		font-size: rem-calc(14);
+		&:hover{
+			color: $gray-200;
+		}
+	}
+}
+.top-footer{
+	padding-bottom: 90px;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include rainbow();
+		height: 2px;
+		opacity: .5;
+	}
+}
+.footer-menu{
+	width: 165px;
+	margin-right: 36px;
+	&:last-child{
+		margin-right: 0;
+	}
+	ul{
+		margin-top: -18px;
+		li{
+			margin-top: 18px;
+		}
+	}
+	&.footer-main-menu{
+		ul{
+			li{
+				a{
+					color: $white;
+					&:hover{
+						color: $gray-200;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-contact-area{
+	p{
+		color: $gray-200;
+		span{
+			color: $gray-400;
+		}
+	}
+	ul{
+		margin-top: -10px;
+		li{
+			a{
+				color: $gray-200;
+				&:hover{
+					color: $white;
+				}
+			}
+			margin-top: 10px;;
+			img,svg{
+				margin-right: 10px;;
+			}
+		}
+	}
+}
+.mid-footer{
+	padding: 48px 0 36px;
+	margin-bottom: 36px;
+	.program-area{
+		.program-content{
+			margin-top: 36px;
+		}
+		p{
+			max-width: 480px;
+		}
+	}
+	.info-area{
+		ul{
+			margin-top: -24px;
+			li{
+				margin-top: 24px;
+			}
+		}
+		.info-icon{
+			width: 72px;
+			margin-right: 36px;
+			img,svg{
+				width: 100%;
+			}
+		}
+		.info-content{
+			width: calc(100% - 108px);
+		}
+	}
+}
+
+.bottom-footer{
+	p{
+		font-size: rem-calc(11);
+		color: $gray-500;
+		line-height: 150%;
+		span{
+			color: $gray-400;
+			a{
+				font-size: rem-calc(11);
+			}
+		}
 	}
 }
