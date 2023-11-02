@@ -14148,8 +14148,10 @@ footer a:hover {
   height: 2px;
   opacity: 0.5;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .footer-contact-area {
+    margin-top: 0;
+    padding-top: 0;
     max-width: 300px;
   }
   .footer-contact-area:after {
@@ -14182,11 +14184,21 @@ footer a:hover {
   padding: 48px 0 36px;
   margin-bottom: 36px;
 }
+.mid-footer .program-area {
+  margin-bottom: 48px;
+}
+@media (min-width: 992px) {
+  .mid-footer .program-area {
+    margin-bottom: 0;
+  }
+}
 .mid-footer .program-area .program-content {
   margin-top: 36px;
 }
-.mid-footer .program-area p {
-  max-width: 480px;
+@media (min-width: 992px) {
+  .mid-footer .program-area p {
+    max-width: 480px;
+  }
 }
 .mid-footer .info-area ul {
   margin-top: -24px;

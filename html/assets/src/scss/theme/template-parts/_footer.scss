@@ -95,7 +95,9 @@ footer{
 		height: 2px;
 		opacity: .5;
 	}
-	@include breakpoint(xl){
+	@include breakpoint(lg){
+		margin-top: 0;
+		padding-top: 0;
 		max-width: 300px;
 		&:after{
 			display: none;
@@ -127,11 +129,17 @@ footer{
 	padding: 48px 0 36px;
 	margin-bottom: 36px;
 	.program-area{
+		margin-bottom: 48px;
+		@include breakpoint(lg){
+			margin-bottom: 0;
+		}
 		.program-content{
 			margin-top: 36px;
 		}
 		p{
-			max-width: 480px;
+			@include breakpoint(lg){
+				max-width: 480px;
+			}
 		}
 	}
 	.info-area{
