@@ -1,8 +1,11 @@
 footer{
 	position: relative;
 	background: $div-900;
-	padding:90px 0;
+	padding:48px 0;
 	font-size: rem-calc(13);
+	@include breakpoint(lg){
+		padding:90px 0;
+	}
 	&:before{
 		content:'';
 		position: absolute;
@@ -24,8 +27,11 @@ footer{
 	}
 }
 .top-footer{
-	padding-bottom: 90px;
+	padding-bottom: 48px;
 	position: relative;
+	@include breakpoint(lg){
+		padding-bottom: 90px;
+	}
 	&:after{
 		content: '';
 		position: absolute;

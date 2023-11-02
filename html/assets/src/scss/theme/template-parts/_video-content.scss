@@ -48,7 +48,7 @@
   transform: translate(-50%,-50%);
   @include border-radius(50%);
   @include transition(all,.3s,linear);
-  @include breakpoint(md){
+  @include breakpoint(lg){
     width: 180px;
     height: 180px;
   }

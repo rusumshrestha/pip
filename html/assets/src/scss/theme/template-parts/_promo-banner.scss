@@ -1,0 +1,41 @@
+.section-promo-banner{
+	background: $gray-200;
+}
+
+.promo-banner{
+	height: 390px;
+	padding: 60px 0 30px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	@include breakpoint(md){
+		height: 598px;
+		padding: 68px 0 48px;
+	}
+	p{
+		color: $white;
+	}
+}
+
+.program-list{
+	a{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		height: 390px;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgba($div-500,.87);
+		}
+		img{
+			position: relative;
+			z-index: 1;
+		}
+	}
+}

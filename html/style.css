@@ -13915,7 +13915,7 @@ button:focus {
   border-radius: 50%;
   transition: all 0.3s linear;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .play-icon {
     width: 180px;
     height: 180px;
@@ -14048,8 +14048,13 @@ button:focus {
 footer {
   position: relative;
   background: #02202E;
-  padding: 90px 0;
+  padding: 48px 0;
   font-size: 0.8125rem;
+}
+@media (min-width: 992px) {
+  footer {
+    padding: 90px 0;
+  }
 }
 footer:before {
   content: "";
@@ -14072,8 +14077,13 @@ footer a:hover {
 }
 
 .top-footer {
-  padding-bottom: 90px;
+  padding-bottom: 48px;
   position: relative;
+}
+@media (min-width: 992px) {
+  .top-footer {
+    padding-bottom: 90px;
+  }
 }
 .top-footer:after {
   content: "";
@@ -14227,5 +14237,67 @@ footer a:hover {
 }
 .bottom-footer p span a {
   font-size: 0.6875rem;
+}
+
+@media (max-width: 767px) {
+  .award-wrap .owl-stage {
+    padding-left: 0 !important;
+  }
+}
+.award-wrap .item a {
+  height: 165px;
+  background: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .award-wrap .item a {
+    height: 220px;
+  }
+}
+.award-wrap .item a img, .award-wrap .item a svg {
+  height: 115px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-promo-banner {
+  background: #F5F7F7;
+}
+
+.promo-banner {
+  height: 390px;
+  padding: 60px 0 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .promo-banner {
+    height: 598px;
+    padding: 68px 0 48px;
+  }
+}
+.promo-banner p {
+  color: #FFFFFF;
+}
+
+.program-list a {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 390px;
+}
+.program-list a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 166, 233, 0.87);
+}
+.program-list a img {
+  position: relative;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

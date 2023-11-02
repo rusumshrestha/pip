@@ -1,0 +1,20 @@
+.award-wrap{
+	.owl-stage{
+		@include breakpointMax(md){
+			padding-left: 0 !important;
+		}
+	}
+	.item{
+		a{
+			height: 165px;
+			background: $white;
+			@include breakpoint(md){
+				height: 220px;
+			}
+			img,svg{
+				height: 115px;
+				object-fit: contain;
+			}
+		}
+	}
+}

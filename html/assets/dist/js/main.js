@@ -47,20 +47,33 @@ $(document).ready(function() {
             a.toggleClass("active");
         })
     });
+
+    $('.award-slider').owlCarousel({
+        loop:true,
+        nav: false,
+        dots: false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                stagePadding: 32,
+                margin:12,
+            },
+            767:{
+                items:3,
+                margin:12,
+                stagePadding: 32,
+            },
+            992:{
+                items:4,
+                margin:18,
+            },
+            1440:{
+                items:6,
+                nav:true,
+                margin:18,
+            }
+        }
+    })
 });
 
-
- const inViewport = (entries, observer) => {
-      entries.forEach(entry => {
-        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-      });
-    };
-
-    const Obs = new IntersectionObserver(inViewport);
-    const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
-
-    // Attach observer to every [data-inviewport] element:
-    const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-    ELs_inViewport.forEach(EL => {
-      Obs.observe(EL, obsOptions);
-    });
