@@ -37,33 +37,70 @@ footer{
 		opacity: .5;
 	}
 }
-.footer-menu{
-	width: 165px;
-	margin-right: 36px;
-	&:last-child{
-		margin-right: 0;
+.top-footer-menu{
+	margin-left: -25px;
+	width: 100%;
+	@include breakpoint(lg){
+		width: 50%;	
 	}
-	ul{
-		margin-top: -18px;
-		li{
-			margin-top: 18px;
+	@include breakpoint(xl){
+		width: 768px;
+	}
+	@include breakpoint(xxl){
+		margin-left: -36px;
+	}
+	.footer-menu{
+		width: calc(50% - 25px);
+		margin-left: 25px;
+		@include breakpoint(xl){
+			width: calc(25% - 25px);
 		}
-	}
-	&.footer-main-menu{
+		@include breakpoint(xxl){
+			width: calc(25% - 36px);
+		}
 		ul{
+			margin-top: -18px;
 			li{
-				a{
-					color: $white;
-					&:hover{
-						color: $gray-200;
+				margin-top: 18px;
+			}
+		}
+		&.footer-main-menu{
+			ul{
+				li{
+					a{
+						color: $white;
+						&:hover{
+							color: $gray-200;
+						}
 					}
 				}
 			}
 		}
 	}
+
 }
 
 .footer-contact-area{
+	width: 100%;
+	margin-top: 48px;
+	padding-top: 48px;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		@include rainbow();
+		height: 2px;
+		opacity: .5;
+	}
+	@include breakpoint(xl){
+		max-width: 300px;
+		&:after{
+			display: none;
+		}
+	}
 	p{
 		color: $gray-200;
 		span{
