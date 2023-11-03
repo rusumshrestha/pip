@@ -18,24 +18,66 @@
 }
 
 .program-list{
+	margin-top: -4px;
+	margin-left: -4px;
+	@include breakpoint(md){
+		margin-top: -18px;
+		margin-left: -18px;
+	}
+	[class*="theme-"]{
+		width: calc(50% - 4px);
+		margin-top: 4px;
+		margin-left: 4px;
+		@include breakpoint(md){
+			width: calc(50% - 18px);
+			margin-top: 18px;
+			margin-left: 18px;			
+		}
+	}
 	a{
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
 		position: relative;
-		height: 390px;
-		&:after{
-			content: '';
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			background: rgba($div-500,.87);
+		height: 144px;
+		background-blend-mode: multiply, normal;
+		@include breakpoint(md){
+			height: 390px;	
 		}
-		img{
+		img,svg{
+			height: 37px;
+			width:auto;
 			position: relative;
 			z-index: 1;
+			@include breakpoint(md){
+				height: 120px;
+			}
+		}
+	}
+	.theme-diversity{
+		a{
+			background-color: $div-500;
+		}
+	}
+	.theme-sport{
+		a{
+			background-color: $sport-500;
+		}
+	}
+	.theme-health{
+		a{
+			background-color: $hb-500;
+		}
+	}
+	.theme-training{
+		a{
+			background-color: $training-500;
+			img,svg{
+				height: 26px;
+				@include breakpoint(md){
+					height: 83px;
+				}
+			}
 		}
 	}
 }

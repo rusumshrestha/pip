@@ -14280,24 +14280,70 @@ footer a:hover {
   color: #FFFFFF;
 }
 
+.program-list {
+  margin-top: -4px;
+  margin-left: -4px;
+}
+@media (min-width: 768px) {
+  .program-list {
+    margin-top: -18px;
+    margin-left: -18px;
+  }
+}
+.program-list [class*=theme-] {
+  width: calc(50% - 4px);
+  margin-top: 4px;
+  margin-left: 4px;
+}
+@media (min-width: 768px) {
+  .program-list [class*=theme-] {
+    width: calc(50% - 18px);
+    margin-top: 18px;
+    margin-left: 18px;
+  }
+}
 .program-list a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 390px;
+  height: 144px;
+  background-blend-mode: multiply, normal;
 }
-.program-list a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 166, 233, 0.87);
+@media (min-width: 768px) {
+  .program-list a {
+    height: 390px;
+  }
 }
-.program-list a img {
+.program-list a img, .program-list a svg {
+  height: 37px;
+  width: auto;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .program-list a img, .program-list a svg {
+    height: 120px;
+  }
+}
+.program-list .theme-diversity a {
+  background-color: #00A6E9;
+}
+.program-list .theme-sport a {
+  background-color: #009E4C;
+}
+.program-list .theme-health a {
+  background-color: #F26322;
+}
+.program-list .theme-training a {
+  background-color: #EC008C;
+}
+.program-list .theme-training a img, .program-list .theme-training a svg {
+  height: 26px;
+}
+@media (min-width: 768px) {
+  .program-list .theme-training a img, .program-list .theme-training a svg {
+    height: 83px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
