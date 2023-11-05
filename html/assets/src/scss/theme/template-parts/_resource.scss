@@ -1,0 +1,79 @@
+.featured-resouce{
+	width: 804px;
+	.resource-img{
+		padding: 36px 40px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		cursor: pointer;
+		height: 100%;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: linear-gradient(180deg, rgba(0, 66, 98, 0.00) 40%, rgba(2, 32, 46, 0.55) 80%);
+			@include transition(all,.3s,linear);
+		}
+		&:hover{
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: linear-gradient(180deg, rgba(0, 66, 98, 0.00) 10%, rgba(2, 32, 46, 0.75) 80%);
+			}
+		}
+	}
+			
+	h2,p{
+		position: relative;
+		z-index: 1;
+		color: $white;
+		max-width: 480px;
+	}
+	a{
+		color: $white;
+	}
+}
+.resource-list{
+	width: 582px;
+	margin-left: 18px;
+	ul{
+		margin-top: -18px;
+		li{
+			margin-top: 18px;
+		}
+	}
+	.resource-img{
+		width: 271px;
+		aspect-ratio:1/1;
+	}
+	.resource-content{
+		width: 365px;
+		padding: 30px;
+	}
+	.resource-separator{
+		width: 72px;
+		height:3px;
+		margin-bottom: 18px;
+	}
+
+}
+.site-diversity .resource-separator{
+    background-color: $div-500;
+}
+.site-health .resource-separator{
+    background-color: $hb-500;
+}
+.site-sport .resource-separator{
+    background-color: $sport-500;
+}
+.site-training .resource-separator{
+    background-color: $training-500;
+}
