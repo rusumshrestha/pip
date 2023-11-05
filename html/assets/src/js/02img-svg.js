@@ -49,17 +49,18 @@ $(document).ready(function() {
         responsive:{
             0:{
                 items:2,
-                stagePadding: 32,
-                margin:12,
+                stagePadding: 18,
+                margin:4,
             },
-            767:{
+            640:{
                 items:3,
-                margin:12,
+                margin:4,
                 stagePadding: 32,
             },
             992:{
                 items:4,
-                margin:18,
+                margin:4,
+                stagePadding: 32,
             },
             1440:{
                 items:6,

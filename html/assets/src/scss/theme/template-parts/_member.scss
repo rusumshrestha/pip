@@ -1,27 +1,17 @@
-[class*="overlay-"]{
-	&:after{
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-	}
+[class*="member-"]{
+	background-blend-mode: multiply, normal;
 }
-.overlay-diversity{
-	&:after{
-		background: rgba($div-500,.67);
-	}
+.site-diversity .member-block{
+	background-color: $div-500;
 }
-.overlay-sport{
-	&:after{
-		background: rgba($sport-500,.67);
-	}
+.site-health .member-block{
+	background-color: $hb-500;
 }
-.overlay-health-wellbeing{
-	&:after{
-		background: rgba($hb-500,.67);
-	}
+.site-sport .member-block{
+	background-color: $sport-500;
+}
+.site-training .member-block{
+	background-color: $training-500;
 }
 .section-member{
 	@include breakpointMax(lg){

@@ -6,6 +6,18 @@ button{
         box-shadow: none;
     }
 }
+.site-diversity .btn{
+    background-color: $div-500;
+}
+.site-health .btn{
+    background-color: $hb-500;
+}
+.site-sport .btn{
+    background-color: $sport-500;
+}
+.site-training .btn{
+    background-color: $training-500;
+}
 .btn {
     padding: 19px 12px;
     text-align: center;
@@ -13,7 +25,6 @@ button{
     font-size: rem-calc(15);
     color: $white;
     font-weight: $medium;
-    background: $gray-900;
     border-radius: rem-calc(3px);
     border: none;
     box-shadow: inset 0 -2px 0 rgba($gray-900,.125);
@@ -60,6 +71,13 @@ button{
     &.btn-white{
         background: $gray-200;
         color: $gray-700;
+        &:hover{
+            // background: $div-700;
+        }
+    }
+    &.btn-dark-gray{
+        background: $gray-900;
+        color: $white;
         &:hover{
             // background: $div-700;
         }

@@ -3,14 +3,18 @@
 }
 
 .promo-banner{
-	height: 390px;
+	aspect-ratio: 1/1;
 	padding: 60px 0 30px;
+	margin: 0 -18px 4px;;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	@include breakpoint(md){
-		height: 598px;
+		aspect-ratio: 4/1.71;
+	}
+	@include breakpoint(lg){
 		padding: 68px 0 48px;
+		margin: 0 0 18px;
 	}
 	p{
 		color: $white;
@@ -18,17 +22,15 @@
 }
 
 .program-list{
-	margin-top: -4px;
-	margin-left: -4px;
-	@include breakpoint(md){
-		margin-top: -18px;
-		margin-left: -18px;
+	margin: -4px -18px 0 -22px;
+	@include breakpoint(lg){
+		margin: -18px 0 0 -18px;
 	}
 	[class*="theme-"]{
 		width: calc(50% - 4px);
 		margin-top: 4px;
 		margin-left: 4px;
-		@include breakpoint(md){
+		@include breakpoint(lg){
 			width: calc(50% - 18px);
 			margin-top: 18px;
 			margin-left: 18px;			
@@ -39,18 +41,24 @@
 		background-position: center center;
 		background-size: cover;
 		position: relative;
-		height: 144px;
+		aspect-ratio: 4/3;
 		background-blend-mode: multiply, normal;
-		@include breakpoint(md){
-			height: 390px;	
+		@include breakpoint(lg){
+			aspect-ratio: 16/9;
 		}
 		img,svg{
-			height: 37px;
+			max-height: 40px;
 			width:auto;
 			position: relative;
 			z-index: 1;
+			@include breakpoint(xs){
+				max-height: 50px;
+			}
 			@include breakpoint(md){
-				height: 120px;
+				max-height: 75px;
+			}
+			@include breakpoint(lg){
+				max-height: initial;
 			}
 		}
 	}
@@ -72,12 +80,6 @@
 	.theme-training{
 		a{
 			background-color: $training-500;
-			img,svg{
-				height: 26px;
-				@include breakpoint(md){
-					height: 83px;
-				}
-			}
 		}
 	}
 }
