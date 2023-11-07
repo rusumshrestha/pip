@@ -13857,6 +13857,102 @@ button:focus {
   font-size: 0.8125rem;
 }
 
+header {
+  position: relative;
+}
+header:after {
+  content: "";
+  position: absolute;
+  left: 80%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #FFFFFF;
+}
+header .navbar {
+  background: none;
+  padding: 0;
+}
+header h1, header .h1 {
+  margin-bottom: 0;
+}
+header .logo-area h1, header .logo-area .h1 {
+  margin-left: 18px;
+  padding: 6px 0;
+}
+header .logo-area h1 .navbar-brand, header .logo-area .h1 .navbar-brand {
+  padding: 0;
+  display: block;
+}
+header .dropdown.megamenu > .navbar-nav {
+  top: 84px;
+}
+
+.site-diversity header {
+  background: #004262;
+}
+.site-diversity .dropdown.megamenu > .navbar-nav {
+  background: #02202E;
+}
+
+.site-health header {
+  background-color: #D94201;
+}
+.site-health .dropdown.megamenu > .navbar-nav {
+  background: #1C1511;
+}
+
+.site-sport header {
+  background-color: #00612E;
+}
+.site-sport .dropdown.megamenu > .navbar-nav {
+  background: #051A0F;
+}
+
+.site-training header {
+  background-color: #70257B;
+}
+.site-training .dropdown.megamenu > .navbar-nav {
+  background: #201521;
+}
+
+.nav-item.dropdown > .navbar-nav h2, .nav-item.dropdown > .navbar-nav .h2 {
+  color: #FFFFFF;
+}
+.nav-item.dropdown > .navbar-nav .navbar-nav {
+  background: none;
+  position: relative;
+  left: 0;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+}
+.nav-item.dropdown > .navbar-nav .navbar-nav:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.nav-item.dropdown > .navbar-nav .navbar-nav:last-child:after {
+  display: none;
+}
+.nav-item.dropdown > .navbar-nav .navbar-nav .nav-item .nav-link {
+  color: #FFFFFF;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.nav-item.dropdown > .navbar-nav .navbar-nav.featured-nav .nav-item .nav-link {
+  font-size: 21px;
+  line-height: 1.5;
+}
+.nav-item.dropdown > .navbar-nav .navbar-nav:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  opacity: 0.5;
+  background: var(--Rainbow, linear-gradient(90deg, #00A6E9 24.83%, #11B86C 49.65%, #F26322 74.48%));
+}
+
 .section-hihc .h-image {
   margin-bottom: 27px;
   padding: 0;

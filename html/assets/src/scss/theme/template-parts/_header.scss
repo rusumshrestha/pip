@@ -1,0 +1,110 @@
+header{
+	position: relative;
+	&:after{
+		content:'';
+		position: absolute;
+		left: 80%;
+		right:0;
+		top:0;
+		bottom:0;
+		background: $white;
+	}
+	.navbar{
+		background: none;
+		padding: 0;
+	}
+	h1{
+		margin-bottom: 0;
+	}
+	.logo-area{
+		h1{
+			margin-left: 18px;
+			padding: 6px 0;
+			.navbar-brand{
+				padding: 0;
+				display: block;
+			}
+		}
+	}
+	.dropdown.megamenu>.navbar-nav{
+		top:84px;
+	}
+}
+
+.site-diversity{
+	header{
+		background: $div-700;
+	}
+	.dropdown.megamenu>.navbar-nav{
+		background: $div-900;
+	}
+}
+.site-health{
+	header{
+		background-color: $hb-700;
+	}
+	.dropdown.megamenu>.navbar-nav{
+		background: $hb-900;
+	}
+}
+.site-sport{
+	header{
+		background-color: $sport-700;
+	}
+	.dropdown.megamenu>.navbar-nav{
+		background: $sport-900;
+	}
+}
+.site-training{
+	header{
+		background-color: $training-700;
+	}
+	.dropdown.megamenu>.navbar-nav{
+		background: $training-900;
+	}
+}
+
+.nav-item.dropdown>.navbar-nav {
+	h2{
+		color: $white;
+	}
+	.navbar-nav{
+		background: none;
+		position: relative;
+		left: 0;
+		padding-bottom: 36px;
+		margin-bottom: 36px;
+		&:last-child{
+			margin-bottom: 0;
+			padding-bottom: 0;
+			&:after{
+				display: none;
+			}
+		}
+		.nav-item{
+			.nav-link{
+				color: $white;
+				font-size: 17px;
+				line-height: 1.5;
+			}
+		}
+		&.featured-nav{
+			.nav-item{
+				.nav-link{
+					font-size: 21px;
+					line-height: 1.5;
+				}
+			}
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 2px;
+			opacity: .5;
+			@include rainbow();
+		}
+	}
+}
