@@ -1,5 +1,25 @@
-.featured-resouce{
-	width: 804px;
+.section-resource-wrap{
+	.container-md{
+		@include breakpointMax(md){
+			padding: 0;
+		}
+	}
+}
+
+.featured-resource{
+	margin-bottom: 36px;
+	height: 220px;
+	@include breakpoint(md){
+		height: 400px;
+	}
+	@include breakpoint(xl){
+		width: 50%;
+		margin-bottom: 0;
+		height: auto;
+	}
+	@include breakpoint(xxl){
+		width: 804px;
+	}
 	.resource-img{
 		padding: 36px 40px;
 		background-repeat: no-repeat;
@@ -42,25 +62,79 @@
 	}
 }
 .resource-list{
-	width: 582px;
-	margin-left: 18px;
+	margin-top: 18px;
+	@include breakpoint(xl){
+		margin-left: 18px;
+		margin-top: 0;
+		width: calc(50% - 18px);
+	}
+	@include breakpoint(xxl){
+		width: 582px;
+	}
 	ul{
 		margin-top: -18px;
+		@include breakpoint(xl){
+			margin-left: 0;
+		}
 		li{
 			margin-top: 18px;
 			background: $white;
+			@include breakpoint(xl){
+				width: 100%;
+			}
 		}
 	}
-	.resource-img{
-		width: 271px;
-		aspect-ratio:1/1;
+	.resource-thumb{
+		width: 150px;
+		a{
+			display: block;
+			height: 100%;
+			img{
+				height: 100%;
+			}
+		}
+		@include breakpoint(md){
+			aspect-ratio:1/1;
+			width: 217px;
+		}
 	}
 	.resource-content{
-		width: 365px;
-		padding: 30px;
+		padding: 30px 18px;
+		width: calc(100% - 150px);
+		@include breakpoint(md){
+			padding: 30px;
+			width: calc(100% - 217px);
+		}
+		@include breakpoint(xl){
+			width: 325px;
+		}
+		@include breakpoint(xxl){
+			width: 365px;
+		}
+		h3{
+			margin-bottom: 9px;
+			@include breakpointMax(md){
+				font-size: 15px;
+			}
+			@include breakpoint(md){
+				margin-bottom: 18px;
+			}
+		}
+		p{
+			@include breakpointMax(md){
+				font-size: 13px;
+			}
+		}
 	}
 	
 
+}
+.new-resource-list{
+	.owl-stage{
+		@include breakpointMax(lg){
+			padding-left: 0 !important;
+		}
+	}
 }
 
 .new-resource{
@@ -71,6 +145,16 @@
 		aspect-ratio: 1/1;
 		padding: 10px;
 		background: $gray-200;
+		@include breakpoint(xxl){
+			width: 188px;
+		}
+		a{
+			display: block;
+			height: 100%;
+			img{
+				height: 100%;
+			}
+		}
 	}
 	.new-resource-content{
 		padding: 18px 22px 0;
@@ -94,13 +178,17 @@
 			}
 		}
 	}
+	
 }
 .resource-separator{
 	width: 72px;
 	height:3px;
-	margin-bottom: 18px;
+	margin-bottom: 9px;
 	&.rainbow{
 		@include rainbow();
+	}
+	@include breakpoint(md){
+		margin-bottom: 18px;
 	}
 }
 

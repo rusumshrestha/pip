@@ -82,21 +82,16 @@ $(document).ready(function() {
         dots: false,
         responsiveClass:true,
         responsive:{
-            // 0:{
-            //     items:2,
-            //     stagePadding: 18,
-            //     margin:4,
-            // },
-            // 640:{
-            //     items:3,
-            //     margin:4,
-            //     stagePadding: 32,
-            // },
-            // 992:{
-            //     items:4,
-            //     margin:4,
-            //     stagePadding: 32,
-            // },
+            0:{
+                items:1,
+                stagePadding: 50,
+                margin:12,
+            },
+            992:{
+                items:2,
+                nav:false,
+                margin:18,
+            },
             1440:{
                 items:3,
                 nav:false,

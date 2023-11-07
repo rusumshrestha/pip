@@ -14556,10 +14556,34 @@ footer a:hover {
   background-color: #B017C7;
 }
 
-.featured-resouce {
-  width: 804px;
+@media (max-width: 767px) {
+  .section-resource-wrap .container-md {
+    padding: 0;
+  }
 }
-.featured-resouce .resource-img {
+
+.featured-resource {
+  margin-bottom: 36px;
+  height: 220px;
+}
+@media (min-width: 768px) {
+  .featured-resource {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .featured-resource {
+    width: 50%;
+    margin-bottom: 0;
+    height: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .featured-resource {
+    width: 804px;
+  }
+}
+.featured-resource .resource-img {
   padding: 36px 40px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14568,7 +14592,7 @@ footer a:hover {
   cursor: pointer;
   height: 100%;
 }
-.featured-resouce .resource-img:after {
+.featured-resource .resource-img:after {
   content: "";
   position: absolute;
   left: 0;
@@ -14578,7 +14602,7 @@ footer a:hover {
   background: linear-gradient(180deg, rgba(0, 66, 98, 0) 40%, rgba(2, 32, 46, 0.55) 80%);
   transition: all 0.3s linear;
 }
-.featured-resouce .resource-img:hover:after {
+.featured-resource .resource-img:hover:after {
   content: "";
   position: absolute;
   left: 0;
@@ -14587,34 +14611,107 @@ footer a:hover {
   bottom: 0;
   background: linear-gradient(180deg, rgba(0, 66, 98, 0) 10%, rgba(2, 32, 46, 0.75) 80%);
 }
-.featured-resouce h2, .featured-resouce .h2, .featured-resouce p {
+.featured-resource h2, .featured-resource .h2, .featured-resource p {
   position: relative;
   z-index: 1;
   color: #FFFFFF;
   max-width: 480px;
 }
-.featured-resouce a {
+.featured-resource a {
   color: #FFFFFF;
 }
 
 .resource-list {
-  width: 582px;
-  margin-left: 18px;
+  margin-top: 18px;
+}
+@media (min-width: 1200px) {
+  .resource-list {
+    margin-left: 18px;
+    margin-top: 0;
+    width: calc(50% - 18px);
+  }
+}
+@media (min-width: 1440px) {
+  .resource-list {
+    width: 582px;
+  }
 }
 .resource-list ul {
   margin-top: -18px;
+}
+@media (min-width: 1200px) {
+  .resource-list ul {
+    margin-left: 0;
+  }
 }
 .resource-list ul li {
   margin-top: 18px;
   background: #FFFFFF;
 }
-.resource-list .resource-img {
-  width: 271px;
-  aspect-ratio: 1/1;
+@media (min-width: 1200px) {
+  .resource-list ul li {
+    width: 100%;
+  }
+}
+.resource-list .resource-thumb {
+  width: 150px;
+}
+.resource-list .resource-thumb a {
+  display: block;
+  height: 100%;
+}
+.resource-list .resource-thumb a img {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .resource-list .resource-thumb {
+    aspect-ratio: 1/1;
+    width: 217px;
+  }
 }
 .resource-list .resource-content {
-  width: 365px;
-  padding: 30px;
+  padding: 30px 18px;
+  width: calc(100% - 150px);
+}
+@media (min-width: 768px) {
+  .resource-list .resource-content {
+    padding: 30px;
+    width: calc(100% - 217px);
+  }
+}
+@media (min-width: 1200px) {
+  .resource-list .resource-content {
+    width: 325px;
+  }
+}
+@media (min-width: 1440px) {
+  .resource-list .resource-content {
+    width: 365px;
+  }
+}
+.resource-list .resource-content h3, .resource-list .resource-content .h3 {
+  margin-bottom: 9px;
+}
+@media (max-width: 767px) {
+  .resource-list .resource-content h3, .resource-list .resource-content .h3 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .resource-list .resource-content h3, .resource-list .resource-content .h3 {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .resource-list .resource-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .new-resource-list .owl-stage {
+    padding-left: 0 !important;
+  }
 }
 
 .new-resource {
@@ -14626,6 +14723,18 @@ footer a:hover {
   aspect-ratio: 1/1;
   padding: 10px;
   background: #F5F7F7;
+}
+@media (min-width: 1440px) {
+  .new-resource .new-resource-img {
+    width: 188px;
+  }
+}
+.new-resource .new-resource-img a {
+  display: block;
+  height: 100%;
+}
+.new-resource .new-resource-img a img {
+  height: 100%;
 }
 .new-resource .new-resource-content {
   padding: 18px 22px 0;
@@ -14653,10 +14762,15 @@ footer a:hover {
 .resource-separator {
   width: 72px;
   height: 3px;
-  margin-bottom: 18px;
+  margin-bottom: 9px;
 }
 .resource-separator.rainbow {
   background: var(--Rainbow, linear-gradient(90deg, #00A6E9 24.83%, #11B86C 49.65%, #F26322 74.48%));
+}
+@media (min-width: 768px) {
+  .resource-separator {
+    margin-bottom: 18px;
+  }
 }
 
 .site-diversity .resource-separator {
