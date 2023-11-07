@@ -13860,14 +13860,11 @@ button:focus {
 header {
   position: relative;
 }
-header:after {
+header:before, header:after {
   content: "";
   position: absolute;
-  left: 80%;
-  right: 0;
   top: 0;
   bottom: 0;
-  background: #FFFFFF;
 }
 header .navbar {
   background: none;
@@ -13886,6 +13883,19 @@ header .logo-area h1 .navbar-brand, header .logo-area .h1 .navbar-brand {
 }
 header .dropdown.megamenu > .navbar-nav {
   top: 84px;
+}
+header .navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+  line-height: 150%;
+  font-weight: 500;
+  padding: 0;
+}
+header .navbar-nav .nav-link:hover {
+  color: #FFFFFF;
+}
+header .navbar-nav .nav-item.active > .nav-link {
+  color: #FFFFFF;
 }
 
 .site-diversity header {

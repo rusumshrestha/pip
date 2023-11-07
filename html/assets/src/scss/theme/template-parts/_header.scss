@@ -1,14 +1,22 @@
 header{
 	position: relative;
-	&:after{
+	&:before, &:after{
 		content:'';
 		position: absolute;
-		left: 80%;
-		right:0;
 		top:0;
 		bottom:0;
-		background: $white;
 	}
+	// &:before{
+	// 	left: 0%;
+	// 	right: 50%;
+	// 	background: $div-500;
+	// }
+	// &:after{
+	// 	left: calc(100% - 1440px);
+	// 	right: 0%;
+	// 	background: $white;
+		
+	// }
 	.navbar{
 		background: none;
 		padding: 0;
@@ -29,11 +37,29 @@ header{
 	.dropdown.megamenu>.navbar-nav{
 		top:84px;
 	}
+	.navbar-nav .nav-link{
+		color: $white;
+		font-size: rem-calc(15);
+		line-height: 150%;
+		font-weight: $medium;
+		padding: 0;
+		&:hover{
+			color: $white;
+		}
+	}
+	.navbar-nav .nav-item.active>.nav-link{
+		color: $white;
+	}
 }
 
 .site-diversity{
 	header{
 		background: $div-700;
+		// &:before{
+		// 	left: 0%;
+		// 	right: calc(100% - 1440px);
+		// 	background: $div-700;
+		// }
 	}
 	.dropdown.megamenu>.navbar-nav{
 		background: $div-900;
