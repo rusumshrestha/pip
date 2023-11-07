@@ -14788,4 +14788,88 @@ footer a:hover {
 .site-training .resource-separator {
   background-color: #B017C7;
 }
+
+.page-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: multiply, normal;
+  aspect-ratio: 16/4.5;
+  padding: 130px 122px 67px;
+}
+@media (min-width: 768px) {
+  .page-banner {
+    aspect-ratio: 16/4.5;
+    padding: 130px 122px 67px;
+  }
+}
+.page-banner * {
+  color: #FFFFFF;
+}
+.page-banner .page-banner-content {
+  max-width: 640px;
+}
+
+.breadcrumb-nav ul li {
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 22px;
+}
+.breadcrumb-nav ul li:last-child {
+  margin-right: 0;
+}
+.breadcrumb-nav ul li:last-child:after {
+  display: none;
+}
+.breadcrumb-nav ul li a {
+  font-size: 13px;
+  font-weight: 600;
+}
+.breadcrumb-nav ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+}
+.breadcrumb-nav ul li:after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='11' viewBox='0 0 6 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.50004 5.49996L0.250041 2.24996C0.0972629 2.09718 0.020874 1.90274 0.020874 1.66663C0.020874 1.43051 0.0972629 1.23607 0.250041 1.08329C0.402818 0.930515 0.597263 0.854126 0.833374 0.854126C1.06949 0.854126 1.26393 0.930515 1.41671 1.08329L5.25004 4.91663C5.33337 4.99996 5.3924 5.09024 5.42712 5.18746C5.46185 5.28468 5.47921 5.38885 5.47921 5.49996C5.47921 5.61107 5.46185 5.71524 5.42712 5.81246C5.3924 5.90968 5.33337 5.99996 5.25004 6.08329L1.41671 9.91663C1.26393 10.0694 1.06949 10.1458 0.833374 10.1458C0.597263 10.1458 0.402818 10.0694 0.250041 9.91663C0.0972629 9.76385 0.020874 9.5694 0.020874 9.33329C0.020874 9.09718 0.0972629 8.90274 0.250041 8.74996L3.50004 5.49996Z' fill='%23B2B6B8'/%3E%3C/svg%3E%0A");
+  width: 6px;
+  height: 11px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -11px;
+}
+
+.site-diversity .breadcrumb-nav ul li:before {
+  background-color: #00A6E9;
+}
+.site-diversity .page-banner {
+  background-color: #004262;
+}
+
+.site-health .breadcrumb-nav ul li:before {
+  background-color: #F26322;
+}
+.site-health .page-banner {
+  background-color: #D94201;
+}
+
+.site-sport .breadcrumb-nav ul li:before {
+  background-color: #009E4C;
+}
+.site-sport .page-banner {
+  background-color: #00612E;
+}
+
+.site-training .breadcrumb-nav ul li:before {
+  background-color: #B017C7;
+}
+.site-training .page-banner {
+  background-color: #00612E;
+}
 /*# sourceMappingURL=style.css.map */
