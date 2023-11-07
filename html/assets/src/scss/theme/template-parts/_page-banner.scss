@@ -1,12 +1,19 @@
+.page-banner-wrap{
+	.container-lg{
+		@include breakpointMax(lg){
+			padding: 0;
+		}
+	}
+}
+
 .page-banner{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	background-blend-mode: multiply, normal;
 	aspect-ratio: 16/4.5;
-	padding: 130px 122px 67px;
-	@include breakpoint(md){
-		aspect-ratio: 16/4.5;
+	padding: 72px 18px 48px;
+	@include breakpoint(lg){
 		padding: 130px 122px 67px;
 	}
 	*{
@@ -15,7 +22,7 @@
 	.page-banner-content{
 		max-width: 640px;
 		margin-top: 24px;
-		@incldue breakpoint(md){
+		@incldue breakpoint(lg){
 			margin-top: 36px;
 		}
 	}

@@ -14789,17 +14789,22 @@ footer a:hover {
   background-color: #B017C7;
 }
 
+@media (max-width: 991px) {
+  .page-banner-wrap .container-lg {
+    padding: 0;
+  }
+}
+
 .page-banner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: multiply, normal;
   aspect-ratio: 16/4.5;
-  padding: 130px 122px 67px;
+  padding: 72px 18px 48px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .page-banner {
-    aspect-ratio: 16/4.5;
     padding: 130px 122px 67px;
   }
 }
@@ -14808,6 +14813,12 @@ footer a:hover {
 }
 .page-banner .page-banner-content {
   max-width: 640px;
+  margin-top: 24px;
+}
+@incldue breakpoint(lg) {
+  .page-banner .page-banner-content {
+    margin-top: 36px;
+  }
 }
 
 .breadcrumb-nav ul li {
