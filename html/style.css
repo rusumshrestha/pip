@@ -14078,6 +14078,7 @@ header .navbar-nav .nav-item.active > .nav-link {
   height: 90px;
   background: rgba(39, 42, 43, 0.95);
   position: absolute;
+  z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
