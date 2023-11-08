@@ -14790,6 +14790,54 @@ footer a:hover {
   background-color: #B017C7;
 }
 
+@media (max-width: 767px) {
+  .section-publication-wrap .container-md {
+    padding: 0;
+  }
+}
+.section-publication-wrap .filter-sidebar {
+  margin-right: 36px;
+}
+@media (min-width: 1200px) {
+  .section-publication-wrap .filter-sidebar {
+    width: 275px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-publication-wrap .filter-sidebar {
+    width: 444px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-publication-wrap .new-resource-list {
+    width: 815px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-publication-wrap .new-resource-list {
+    width: 924px;
+  }
+}
+.section-publication-wrap .new-resource-list .resources-list {
+  margin-top: -9px;
+}
+@media (min-width: 768px) {
+  .section-publication-wrap .new-resource-list .resources-list {
+    margin-top: -18px;
+    margin-left: -18px;
+  }
+}
+.section-publication-wrap .new-resource-list .resources-list .new-resource {
+  margin-top: 9px;
+}
+@media (min-width: 768px) {
+  .section-publication-wrap .new-resource-list .resources-list .new-resource {
+    width: calc(50% - 18px);
+    margin-left: 18px;
+    margin-top: 18px;
+  }
+}
+
 @media (max-width: 991px) {
   .page-banner-wrap .container-lg {
     padding: 0;

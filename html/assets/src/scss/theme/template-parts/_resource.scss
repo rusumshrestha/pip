@@ -204,3 +204,45 @@
 .site-training .pip-separator{
     background-color: $training-500;
 }
+
+.section-publication-wrap{
+	.container-md{
+		@include breakpointMax(md){
+			padding: 0;
+		}
+	}
+	.filter-sidebar{
+		
+		margin-right: 36px;
+		@include breakpoint(xl){
+			width: 275px;
+		}
+		@include breakpoint(xxl){
+			width: 444px;
+		}
+	}
+	.new-resource-list{
+		@include breakpoint(xl){
+			width: 815px;
+		}
+		@include breakpoint(xxl){
+			width: 924px;
+		}
+		.resources-list{
+			margin-top: -9px;
+			@include breakpoint(md){
+				margin-top: -18px;
+				margin-left: -18px;
+			}
+			.new-resource{
+				margin-top: 9px;
+				@include breakpoint(md){
+					width: calc(50% - 18px);
+					margin-left: 18px;
+					margin-top: 18px;
+				}
+			}
+		}
+	}
+
+}
