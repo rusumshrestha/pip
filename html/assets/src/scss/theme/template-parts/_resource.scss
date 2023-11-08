@@ -180,7 +180,7 @@
 	}
 	
 }
-.resource-separator{
+.pip-separator{
 	width: 72px;
 	height:3px;
 	margin-bottom: 9px;
@@ -192,15 +192,15 @@
 	}
 }
 
-.site-diversity .resource-separator{
+.site-diversity .pip-separator{
     background-color: $div-500;
 }
-.site-health .resource-separator{
+.site-health .pip-separator{
     background-color: $hb-500;
 }
-.site-sport .resource-separator{
+.site-sport .pip-separator{
     background-color: $sport-500;
 }
-.site-training .resource-separator{
+.site-training .pip-separator{
     background-color: $training-500;
 }
