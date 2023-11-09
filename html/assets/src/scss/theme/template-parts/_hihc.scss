@@ -22,8 +22,10 @@
 		}
 	}
 	.h-content{
+		// margin-top: 30px;
 		@include breakpoint(lg){
 			width: 425px;
+			margin-top: 0;
 		}
 		@include breakpoint(xl){
 			width: 492px;

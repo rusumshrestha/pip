@@ -70,3 +70,25 @@
     max-width: 480px;
   }
 }
+
+
+.site-diversity {
+  .cover:hover .play-icon{
+      background-color: $div-500;
+    }
+}
+.site-health {
+  .cover:hover .play-icon{
+      background-color: $hb-500;
+    }
+}
+.site-sport {
+  .cover:hover .play-icon{
+      background-color: $sport-500;
+    }
+}
+.site-training {
+  .cover:hover .play-icon{
+      background-color: $training-500;
+    }
+}

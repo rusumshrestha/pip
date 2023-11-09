@@ -13590,10 +13590,12 @@ img {
 }
 
 section {
-  padding: 15px 0;
+  padding: 36px 0;
 }
-section.section {
-  padding: 90px 0;
+@media (min-width: 992px) {
+  section {
+    padding: 90px 0;
+  }
 }
 
 .section-title {
@@ -14010,6 +14012,7 @@ header .navbar-nav .nav-item.active > .nav-link {
 @media (min-width: 992px) {
   .section-hihc .h-content {
     width: 425px;
+    margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -14124,6 +14127,22 @@ header .navbar-nav .nav-item.active > .nav-link {
   max-width: 480px;
 }
 
+.site-diversity .cover:hover .play-icon {
+  background-color: #00A6E9;
+}
+
+.site-health .cover:hover .play-icon {
+  background-color: #F26322;
+}
+
+.site-sport .cover:hover .play-icon {
+  background-color: #009E4C;
+}
+
+.site-training .cover:hover .play-icon {
+  background-color: #B017C7;
+}
+
 .custom-modal .modal-dialog {
   max-width: 1090px;
 }
@@ -14154,7 +14173,7 @@ header .navbar-nav .nav-item.active > .nav-link {
 }
 
 @media (max-width: 991px) {
-  .section-member {
+  .section-member.section {
     padding: 0;
   }
 }
@@ -14254,9 +14273,38 @@ footer p {
 footer a {
   color: #B2B6B8;
   font-size: 0.875rem;
+  transition: all 0.3s linear;
 }
 footer a:hover {
   color: #F5F7F7;
+}
+
+.site-diversity footer a:hover, .site-diversity .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .site-diversity .footer-contact-area ul li a:hover {
+  color: #00A6E9;
+}
+.site-diversity .footer-contact-area ul li svg path {
+  fill: #00A6E9;
+}
+
+.site-health footer a:hover, .site-health .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .site-health .footer-contact-area ul li a:hover {
+  color: #F26322;
+}
+.site-health .footer-contact-area ul li svg path {
+  fill: #F26322;
+}
+
+.site-sport footer a:hover, .site-sport .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .site-sport .footer-contact-area ul li a:hover {
+  color: #009E4C;
+}
+.site-sport .footer-contact-area ul li svg path {
+  fill: #009E4C;
+}
+
+.site-training footer a:hover, .site-training .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .site-training .footer-contact-area ul li a:hover {
+  color: #B017C7;
+}
+.site-training .footer-contact-area ul li svg path {
+  fill: #B017C7;
 }
 
 .top-footer {

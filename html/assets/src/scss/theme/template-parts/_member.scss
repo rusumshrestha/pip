@@ -14,8 +14,10 @@
 	background-color: $training-500;
 }
 .section-member{
-	@include breakpointMax(lg){
-		padding: 0;
+	&.section{
+		@include breakpointMax(lg){
+			padding: 0;
+		}
 	}
 	.container-lg{
 		@include breakpointMax(lg){

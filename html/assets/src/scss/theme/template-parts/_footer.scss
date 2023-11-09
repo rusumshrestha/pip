@@ -21,10 +21,44 @@ footer{
 	a{
 		color: $gray-400;
 		font-size: rem-calc(14);
+		@include transition(all,.3s,linear);
 		&:hover{
 			color: $gray-200;
 		}
 	}
+}
+
+.site-diversity {
+  footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
+      color: $div-500;
+    }
+    .footer-contact-area ul li svg path{
+    	fill: $div-500;
+    }
+}
+.site-health {
+  footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
+      color: $hb-500;
+    }
+    .footer-contact-area ul li svg path{
+    	fill: $hb-500;
+    }
+}
+.site-sport {
+  footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
+      color: $sport-500;
+    }
+    .footer-contact-area ul li svg path{
+    	fill: $sport-500;
+    }
+}
+.site-training {
+  footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
+      color: $training-500;
+    }
+    .footer-contact-area ul li svg path{
+    	fill: $training-500;
+    }
 }
 .top-footer{
 	padding-bottom: 48px;
