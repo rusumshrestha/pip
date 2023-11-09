@@ -34,12 +34,6 @@
 			font-size: 13px;
 			font-weight: $sbold;
 			margin-right: 22px;
-			&:last-child{
-				margin-right: 0;
-				&:after{
-					display: none;
-				}
-			}
 			a{
 				font-size: 13px;
 				font-weight: $sbold;
@@ -98,4 +92,10 @@
 	.page-banner{
 		background-color: $sport-700;
 	}
+}
+
+
+.article-banner-content{
+	max-width: 640px;
+	margin-left: 36px;
 }

@@ -13589,7 +13589,10 @@ img {
   font-weight: 900;
 }
 
-.section {
+section {
+  padding: 15px 0;
+}
+section.section {
   padding: 90px 0;
 }
 
@@ -13808,6 +13811,17 @@ button:focus {
   border: none;
   box-shadow: inset 0 0 0 rgba(39, 42, 43, 0.5);
 }
+.btn.btn-white {
+  background: #FFFFFF;
+  color: #515658;
+  border: 1px solid #515658;
+  box-shadow: none;
+}
+.btn.btn-white:hover {
+  background: #B2B6B8;
+  border: 1px solid #B2B6B8;
+  box-shadow: none;
+}
 .btn.btn-blue {
   background: #00A6E9;
 }
@@ -13820,7 +13834,7 @@ button:focus {
 .btn.btn-pink {
   background: #B017C7;
 }
-.btn.btn-white {
+.btn.btn-light-gray {
   background: #F5F7F7;
   color: #515658;
 }
@@ -14557,7 +14571,7 @@ footer a:hover {
   background-color: #B017C7;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .section-resource-wrap .container-md {
     padding: 0;
   }
@@ -14774,18 +14788,30 @@ footer a:hover {
   }
 }
 
+.site-diversity .result {
+  color: #00A6E9;
+}
 .site-diversity .pip-separator {
   background-color: #00A6E9;
 }
 
+.site-health .result {
+  color: #F26322;
+}
 .site-health .pip-separator {
   background-color: #F26322;
 }
 
+.site-sport .result {
+  color: #009E4C;
+}
 .site-sport .pip-separator {
   background-color: #009E4C;
 }
 
+.site-training .result {
+  color: #B017C7;
+}
 .site-training .pip-separator {
   background-color: #B017C7;
 }
@@ -14876,12 +14902,6 @@ footer a:hover {
   font-weight: 600;
   margin-right: 22px;
 }
-.breadcrumb-nav ul li:last-child {
-  margin-right: 0;
-}
-.breadcrumb-nav ul li:last-child:after {
-  display: none;
-}
 .breadcrumb-nav ul li a {
   font-size: 13px;
   font-weight: 600;
@@ -14931,6 +14951,11 @@ footer a:hover {
 }
 .site-training .page-banner {
   background-color: #00612E;
+}
+
+.article-banner-content {
+  max-width: 640px;
+  margin-left: 36px;
 }
 
 @media (max-width: 767px) {
@@ -15011,5 +15036,10 @@ footer a:hover {
 }
 .category-listing ul li .category-content .pip-separator {
   height: 6px;
+}
+
+.filter-sidebar .result {
+  font-weight: 700;
+  font-size: 0.8125rem;
 }
 /*# sourceMappingURL=style.css.map */

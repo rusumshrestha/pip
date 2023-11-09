@@ -1,6 +1,6 @@
 .section-resource-wrap{
 	.container-md{
-		@include breakpointMax(md){
+		@include breakpointMax(lg){
 			padding: 0;
 		}
 	}
@@ -192,17 +192,37 @@
 	}
 }
 
-.site-diversity .pip-separator{
-    background-color: $div-500;
+.site-diversity {
+	.result{
+		color: $div-500;
+	}
+	.pip-separator{
+    	background-color: $div-500;
+    }
 }
-.site-health .pip-separator{
-    background-color: $hb-500;
+.site-health {
+	.result{
+		color: $hb-500;
+	}
+	.pip-separator{
+    	background-color: $hb-500;
+    }
 }
-.site-sport .pip-separator{
-    background-color: $sport-500;
+.site-sport {
+	.result{
+		color: $sport-500;
+	}
+	.pip-separator{
+    	background-color: $sport-500;
+    }
 }
-.site-training .pip-separator{
-    background-color: $training-500;
+.site-training {
+	.result{
+		color: $training-500;
+	}
+	.pip-separator{
+    	background-color: $training-500;
+    }
 }
 
 .section-publication-wrap{
