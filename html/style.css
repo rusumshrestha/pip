@@ -13590,10 +13590,13 @@ img {
 }
 
 section {
+  padding: 15px 0;
+}
+section.section {
   padding: 36px 0;
 }
 @media (min-width: 992px) {
-  section {
+  section.section {
     padding: 90px 0;
   }
 }

@@ -301,9 +301,12 @@ img{
 }
 
 section{
-    padding: 36px 0;
-    @include breakpoint(lg){
-        padding: 90px 0;
+    padding: 15px 0;
+    &.section{
+        padding: 36px 0;
+        @include breakpoint(lg){
+            padding: 90px 0;
+        }
     }
 }
 
