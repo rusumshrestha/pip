@@ -193,6 +193,10 @@
 }
 
 .site-diversity {
+	.load-more a:hover{
+		background: $div-500;
+		@include border(all,1px,solid,$div-500);
+	}
 	.result{
 		color: $div-500;
 	}
@@ -201,6 +205,10 @@
     }
 }
 .site-health {
+	.load-more a:hover{
+		background: $hb-500;
+		@include border(all,1px,solid,$hb-500);
+	}
 	.result{
 		color: $hb-500;
 	}
@@ -209,6 +217,10 @@
     }
 }
 .site-sport {
+	.load-more a:hover{
+		background: $sport-500;
+		@include border(all,1px,solid,$sport-500);
+	}
 	.result{
 		color: $sport-500;
 	}
@@ -217,6 +229,10 @@
     }
 }
 .site-training {
+	.load-more a:hover{
+		background: $training-500;
+		@include border(all,1px,solid,$training-500);
+	}
 	.result{
 		color: $training-500;
 	}
@@ -265,4 +281,30 @@
 		}
 	}
 
+}
+
+
+.load-more{
+	margin-top: 48px;
+	a{
+		display: block;
+		padding: 24px;
+		color: $gray-500;
+		@include border(all,1px,solid,$gray-300);
+		@include border-radius(3px);
+		svg{
+			margin-left: 10px;
+			path{
+				@include transition(all,.3s,linear);
+			}
+		}
+		&:hover{
+			color: $white;
+			svg{
+				path{
+					fill: $white;
+				}
+			}
+		}
+	}
 }

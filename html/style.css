@@ -14839,6 +14839,10 @@ footer a:hover {
   }
 }
 
+.site-diversity .load-more a:hover {
+  background: #00A6E9;
+  border: 1px solid #00A6E9;
+}
 .site-diversity .result {
   color: #00A6E9;
 }
@@ -14846,6 +14850,10 @@ footer a:hover {
   background-color: #00A6E9;
 }
 
+.site-health .load-more a:hover {
+  background: #F26322;
+  border: 1px solid #F26322;
+}
 .site-health .result {
   color: #F26322;
 }
@@ -14853,6 +14861,10 @@ footer a:hover {
   background-color: #F26322;
 }
 
+.site-sport .load-more a:hover {
+  background: #009E4C;
+  border: 1px solid #009E4C;
+}
 .site-sport .result {
   color: #009E4C;
 }
@@ -14860,6 +14872,10 @@ footer a:hover {
   background-color: #009E4C;
 }
 
+.site-training .load-more a:hover {
+  background: #B017C7;
+  border: 1px solid #B017C7;
+}
 .site-training .result {
   color: #B017C7;
 }
@@ -14913,6 +14929,29 @@ footer a:hover {
     margin-left: 18px;
     margin-top: 18px;
   }
+}
+
+.load-more {
+  margin-top: 48px;
+}
+.load-more a {
+  display: block;
+  padding: 24px;
+  color: #848889;
+  border: 1px solid #D8DBDC;
+  border-radius: 3px;
+}
+.load-more a svg {
+  margin-left: 10px;
+}
+.load-more a svg path {
+  transition: all 0.3s linear;
+}
+.load-more a:hover {
+  color: #FFFFFF;
+}
+.load-more a:hover svg path {
+  fill: #FFFFFF;
 }
 
 @media (max-width: 991px) {
