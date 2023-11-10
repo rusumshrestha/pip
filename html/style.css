@@ -13329,7 +13329,7 @@ p:last-child {
 
 a {
   color: #000000;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
   text-decoration: none;
 }
 a:hover {
@@ -15043,11 +15043,6 @@ footer a:hover {
   background-color: #00612E;
 }
 
-.article-banner-content {
-  max-width: 640px;
-  margin-left: 36px;
-}
-
 @media (max-width: 767px) {
   .section-category-list-wrap .container-md {
     padding: 0;
@@ -15131,5 +15126,201 @@ footer a:hover {
 .filter-sidebar .result {
   font-weight: 700;
   font-size: 0.8125rem;
+}
+
+@media (max-width: 991px) {
+  .article-banner-wrap .container-lg {
+    padding: 0;
+  }
+}
+.article-banner-wrap .banner-content {
+  margin-top: 36px;
+}
+.article-banner-wrap .article-image {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .article-banner-wrap .article-image {
+    width: calc(50% - 36px);
+    margin-right: 36px;
+  }
+}
+@media (min-width: 1440px) {
+  .article-banner-wrap .article-image {
+    width: 564px;
+  }
+}
+.article-banner-wrap .article-image img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .article-banner-wrap .article-banner-content {
+    margin-top: 18px;
+    padding: 0 18px;
+  }
+}
+@media (min-width: 992px) {
+  .article-banner-wrap .article-banner-content {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .article-banner-wrap .article-banner-content {
+    width: 804px;
+  }
+}
+
+.article-sidebar-meta-data .article-date {
+  color: #515658;
+  font-size: 0.8125rem;
+}
+.article-sidebar-meta-data .article-date img, .article-sidebar-meta-data .article-date svg {
+  margin-right: 6px;
+}
+
+.article-category {
+  border: 3px solid transparent;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  padding: 3px 9px;
+  text-align: center;
+}
+
+.article-download {
+  background: #FFFFFF;
+}
+.article-download h3, .article-download .h3 {
+  padding: 21px 24px;
+  margin-bottom: 0;
+}
+.article-download span img, .article-download span svg {
+  margin-right: 12px;
+}
+.article-download span img path, .article-download span svg path {
+  fill: #272A2B;
+  transition: all 0.3s linear;
+}
+.article-download span span {
+  font-size: 0.875rem;
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s linear;
+}
+.article-download img path, .article-download svg path {
+  transition: all 0.3s linear;
+}
+.article-download ul li {
+  padding: 15px 24px;
+  border-top: 2px solid #F5F7F7;
+}
+
+.article-content p, .article-content li {
+  font-size: 17px;
+  line-height: 175%;
+}
+.article-content a {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+.article-content ul {
+  list-style-type: none;
+}
+.article-content ul li:before {
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  height: 8px;
+  width: 8px;
+}
+.article-content blockquote {
+  border-left: 4px solid transparent;
+  padding-left: 78px;
+  font-size: 27px;
+  line-height: 175%;
+  font-style: italic;
+}
+
+.site-diversity .article-category {
+  border-color: #00A6E9;
+  color: #004262;
+}
+.site-diversity .article-download a:hover svg path {
+  fill: #00A6E9;
+}
+.site-diversity .article-download a:hover span span {
+  color: #00A6E9;
+}
+.site-diversity .article-content blockquote {
+  border-color: #00A6E9;
+}
+.site-diversity .article-content ul li:before {
+  background: #00A6E9;
+}
+.site-diversity .article-content a {
+  color: #00A6E9;
+}
+
+.site-health .article-category {
+  border-color: #F26322;
+  color: #D94201;
+}
+.site-health .article-download a:hover svg path {
+  fill: #F26322;
+}
+.site-health .article-download a:hover span span {
+  color: #F26322;
+}
+.site-health .article-content blockquote {
+  border-color: #F26322;
+}
+.site-health .article-content ul li:before {
+  background: #F26322;
+}
+.site-health .article-content a {
+  color: #F26322;
+}
+
+.site-sport .article-category {
+  border-color: #009E4C;
+  color: #00612E;
+}
+.site-sport .article-download a:hover svg path {
+  fill: #009E4C;
+}
+.site-sport .article-download a:hover span span {
+  color: #009E4C;
+}
+.site-sport .article-content blockquote {
+  border-color: #009E4C;
+}
+.site-sport .article-content ul li:before {
+  background: #009E4C;
+}
+.site-sport .article-content a {
+  color: #009E4C;
+}
+
+.site-training .article-category {
+  border-color: #B017C7;
+  color: #70257B;
+}
+.site-training .article-download a:hover svg path {
+  fill: #B017C7;
+}
+.site-training .article-download a:hover span span {
+  color: #B017C7;
+}
+.site-training .article-content blockquote {
+  border-color: #B017C7;
+}
+.site-training .article-content ul li:before {
+  background: #B017C7;
+}
+.site-training .article-content a {
+  color: #B017C7;
 }
 /*# sourceMappingURL=style.css.map */
