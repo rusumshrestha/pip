@@ -26,7 +26,7 @@ function scssTask(){
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass()) // compile SCSS to CSS
         .pipe(postcss([ autoprefixer() ])) // PostCSS plugins
-        .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
+        // .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(dest('./')
     ); // put final CSS in dist folder
 }

@@ -1,31 +1,35 @@
+/* ==========================================================================
+   Step 1 : Change = (sizeMax - sizeMin) / (viewportMax - viewportMin)
+   Step 2 : A = sizeMax - viewportMax * Change
+   Step 3 : B = 100vw * Change
+   Step 4 : Result = clamp(sizeMin, A + B, sizeMax)
+
+   sizeMax = 57px | sizeMin = 45px | viewportMax = 1440px | viewportMin = 390px
+   Change = (57 - 45)/(1440 - 390) = 0.0114
+   A = 57 - (1440 * 0.0114) = 40.584 (2.5365rem)
+   B = 100vw * 0.0114 = 1.14vw
+   Result = clamp(45px, 1.14vw + 2.5365rem, 57px);
+
+   ========================================================================== */
+
 body{
     font-family: $font;
-    line-height: 150%;
+    line-height: 1.5;
     color: $div-900;
-    @include breakpoint(lg){
-        font-size: rem-calc(17);
-    }
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   margin: 0 0 18px;
 }
 
 h1,.h1{
-    font-size: rem-calc(45);
     line-height: 1;
-    letter-spacing: -1.71px;
-     @include breakpoint(xxl){
-        font-size: rem-calc(57);
-    } 
+    font-size: clamp(rem-calc(45), 1.14vw + 2.5365rem, rem-calc(57));
 }
 h2,.h2{
-    font-size: rem-calc(22);
-    line-height: 1;
+        // 0.0076|19.056/1.191rem|0.76vw| 
+    font-size: clamp(rem-calc(22), 0.76vw + 1.191rem, rem-calc(30));
+    line-height: 1.25;
     letter-spacing: -0.3px;
-    @include breakpoint(xxl){
-        font-size: rem-calc(30);
-        line-height: 1.25;
-    }
 }
 h3,.h3{
     font-size: rem-calc(22);

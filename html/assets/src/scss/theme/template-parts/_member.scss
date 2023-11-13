@@ -60,11 +60,11 @@
 		color: $white;
 	}
 	h1{
-		font-size: rem-calc(45);
+		// font-size: rem-calc(45);
 		font-weight: $eblack;
-		@include breakpoint(xl){
-			font-size: rem-calc(57);
-		}
+		// @include breakpoint(xl){
+		// 	font-size: rem-calc(57);
+		// }
 	}
 	p{
 		font-size: rem-calc(17);

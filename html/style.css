@@ -13251,15 +13251,23 @@ figcaption {
   color: #6c757d;
 }
 
+/* ==========================================================================
+   Step 1 : Change = (sizeMax - sizeMin) / (viewportMax - viewportMin)
+   Step 2 : A = sizeMax - viewportMax * Change
+   Step 3 : B = 100vw * Change
+   Step 4 : Result = clamp(sizeMin, A + B, sizeMax)
+
+   sizeMax = 57px | sizeMin = 45px | viewportMax = 1440px | viewportMin = 390px
+   Change = (57 - 45)/(1440 - 390) = 0.0114
+   A = 57 - (1440 * 0.0114) = 40.584 (2.5365rem)
+   B = 100vw * 0.0114 = 1.14vw
+   Result = clamp(45px, 1.14vw + 2.5365rem, 57px);
+
+   ========================================================================== */
 body {
   font-family: "Be Vietnam Pro", sans-serif;
-  line-height: 150%;
+  line-height: 1.5;
   color: #02202E;
-}
-@media (min-width: 992px) {
-  body {
-    font-size: 1.0625rem;
-  }
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -13267,26 +13275,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 2.8125rem;
   line-height: 1;
-  letter-spacing: -1.71px;
-}
-@media (min-width: 1440px) {
-  h1, .h1 {
-    font-size: 3.5625rem;
-  }
+  font-size: clamp(2.8125rem, 1.14vw + 2.5365rem, 3.5625rem);
 }
 
 h2, .h2 {
-  font-size: 1.375rem;
-  line-height: 1;
+  font-size: clamp(1.375rem, 0.76vw + 1.191rem, 1.875rem);
+  line-height: 1.25;
   letter-spacing: -0.3px;
-}
-@media (min-width: 1440px) {
-  h2, .h2 {
-    font-size: 1.875rem;
-    line-height: 1.25;
-  }
 }
 
 h3, .h3 {
@@ -14229,13 +14225,7 @@ header .navbar-nav .nav-item.active > .nav-link {
   color: #FFFFFF;
 }
 .member-block h1, .member-block .h1 {
-  font-size: 2.8125rem;
   font-weight: 900;
-}
-@media (min-width: 1200px) {
-  .member-block h1, .member-block .h1 {
-    font-size: 3.5625rem;
-  }
 }
 .member-block p {
   font-size: 1.0625rem;
@@ -15132,4 +15122,3 @@ footer a:hover {
   font-weight: 700;
   font-size: 0.8125rem;
 }
-/*# sourceMappingURL=style.css.map */
