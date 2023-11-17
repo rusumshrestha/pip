@@ -1,4 +1,7 @@
 .page-banner-wrap{
+	@include breakpointMax(lg){
+		padding: 0;
+	}
 	.container-lg{
 		@include breakpointMax(lg){
 			padding: 0;
@@ -11,10 +14,11 @@
 	background-position: center center;
 	background-size: cover;
 	background-blend-mode: multiply, normal;
-	aspect-ratio: 16/4.5;
+	aspect-ratio: 1.28/1;
 	padding: 72px 18px 48px;
 	@include breakpoint(lg){
 		padding: 130px 122px 67px;
+		aspect-ratio: 16/4.5;
 	}
 	*{
 		color: $white;
@@ -24,6 +28,10 @@
 		margin-top: 24px;
 		@incldue breakpoint(lg){
 			margin-top: 36px;
+		}
+		p{
+			font-size: clamp(rem-calc(15), 0.57vw + 0.7995rem, rem-calc(21));
+			font-weight: $medium;
 		}
 	}
 }
@@ -90,6 +98,6 @@
 		background-color: $training-500;
 	}
 	.page-banner{
-		background-color: $sport-700;
+		background-color: $training-700;
 	}
 }

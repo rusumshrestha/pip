@@ -129,6 +129,46 @@ button{
     &.btn-xs{
         padding: 9px 12px;
         font-size: rem-calc(13);
+        img,svg{
+            width: 20px;
+            height: 20px;
+        }
     }
    
+}
+
+button.close-modal-btn{
+    background: none;
+    border: none;
+    position: absolute;
+    top: -48px;
+    right: -10px;
+    img,svg{
+        width: 48px;
+    }
+}
+
+.modal-backdrop.show{
+    opacity: .9;
+}
+
+.site-diversity{
+    .modal-backdrop{
+        background: $div-900;
+    }
+}
+.site-health{
+    .modal-backdrop{
+        background: $hb-900;
+    }
+}
+.site-sport{
+    .modal-backdrop{
+        background: $sport-900;
+    }
+}
+.site-training{
+    .modal-backdrop{
+        background: $training-900;
+    }
 }

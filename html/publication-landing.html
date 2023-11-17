@@ -12,449 +12,455 @@
     <link href="style.css" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body class="site-sport">
-    <section class="page-banner-wrap">
-      <div class="container-lg">
-        <div class="page-banner" style="background-image:url('assets/dist/images/img-10.jpg');">
-          <div class="breadcrumb-nav">
-            <ul class="d-flex">
-              <li><a href="index.html" title="Home">Home</a></li>
-              <li>Resources</li>
-            </ul>
-          </div>
-          <div class="page-banner-content">
-            <h1>Publications</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    <main>
+      <section class="page-banner-wrap">
+        <div class="container-lg">
+          <div class="page-banner" style="background-image:url('assets/dist/images/img-10.jpg');">
+            <div class="breadcrumb-nav">
+              <ul class="d-flex">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li>Resources</li>
+              </ul>
+            </div>
+            <div class="page-banner-content">
+              <h1>Publications</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section-publication-wrap bg-gray-200">
-     <div class="container-lg">
-      <div class="d-lg-flex flex-wrap filter-publication">
-        <div class="filter-sidebar">
-          <div class="bg-white">
-           <div class="filter-title d-flex">
-             <h3 class="d-none d-md-block">Filter</h3>
-             <button type="button" data-bs-toggle="modal" data-bs-target="#filter-modal" class="btn btn-white btn-sm btn-pre-icon d-md-none">
-                <img src="assets/dist/images/filter.svg" alt="Filter"> Filter
-              </button>
-             <div class="result ms-auto">32 results found</div>
-           </div>
-            <!-- Modal -->
-          <div class="modal fade custom-modal" id="filter-modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <form>
-                   <div>
-                     <label class="form-label">Publication type</label>
-                     <select class="form-select">
+      </section>
+      <section class="section-publication-wrap bg-gray-200">
+        <div class="container-lg">
+          <div class="d-lg-flex flex-wrap filter-publication">
+            <div class="filter-sidebar">
+              <div class="filter-main">
+                <div class="filter-title d-flex align-items-center">
+                  <h3 class="d-none d-md-block">Filter</h3>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#filter-modal" class="btn btn-white btn-sm btn-pre-icon d-md-none">
+                  <img src="assets/dist/images/filter.svg" alt="Filter"> Filter Results
+                  </button>
+                  <div class="result ms-auto">32 results found</div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade custom-modal" id="filter-modal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <button type="button" class="close-modal-btn" data-bs-dismiss="modal">
+                      <img src="assets/dist/images/close.svg" alt="Close">
+                      </button>
+                      <div class="filter-modal-title">
+                        <h3>Filter</h3>
+                      </div>
+                      <form>
+                        <div>
+                          <label class="form-label">Publication type</label>
+                          <select class="form-select">
+                            <option selected>All types</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label class="form-label">Pride Inclusion Program</label>
+                          <select class="form-select">
+                            <option selected>All program</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label class="form-label">Sort by</label>
+                          <select class="form-select">
+                            <option selected>Newest First</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="action-area d-flex justify-content-end">
+                          <button type="reset" class="btn btn-sm btn-gray btn-post-icon">Clear<img src="assets/dist/images/cancel.svg" alt="arrow forward"></button>
+                          <button type="submit" class="btn btn-sm btn-green btn-post-icon">Submit<img src="assets/dist/images/check_circle.svg" alt="arrow forward"></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-wrapper d-none d-md-block">
+                  <form>
+                    <div>
+                      <label class="form-label">Publication type</label>
+                      <select class="form-select">
                         <option selected>All types</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                   </div>
-                   <div>
-                     <label class="form-label">Pride Inclusion Program</label>
-                     <select class="form-select">
+                    </div>
+                    <div>
+                      <label class="form-label">Pride Inclusion Program</label>
+                      <select class="form-select">
                         <option selected>All program</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                   </div>
-                   <div>
-                     <label class="form-label">Sort by</label>
-                     <select class="form-select">
+                    </div>
+                    <div>
+                      <label class="form-label">Sort by</label>
+                      <select class="form-select">
                         <option selected>Newest First</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                   </div>
-                   <div class="action-area">
-                     <button type="reset" class="btn btn-sm btn-gray btn-post-icon">Cancel<img src="assets/dist/images/cancel.svg" alt="arrow forward"></button>
-                     <button type="submit" class="btn btn-sm btn-green btn-post-icon">Submit<img src="assets/dist/images/check_circle.svg" alt="arrow forward"></button>
-                   </div>
-                 </form>
+                    </div>
+                    <div class="action-area d-flex justify-content-end">
+                      <button type="reset" class="btn btn-sm btn-gray btn-post-icon">Clear<img src="assets/dist/images/cancel.svg" alt="arrow forward"></button>
+                      <button type="submit" class="btn btn-sm btn-green btn-post-icon">Submit<img src="assets/dist/images/check_circle.svg" alt="arrow forward"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="new-resource-list p-0">
+              <div class="resources-list d-md-flex flex-wrap">
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-6.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-7.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-8.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-6.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-7.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-8.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-6.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-7.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-8.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-6.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-7.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item new-resource">
+                  <div class="d-flex">
+                    <div class="new-resource-img">
+                      <a href="javascript:;" title="Resource item title lorem ipsum dolor">
+                        <img src="assets/dist/images/img-8.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="new-resource-content">
+                      <div class="pip-separator raibow"></div>
+                      <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
+                      <ul>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/description.svg" alt="Image">
+                            Factsheet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" title="Link" class="d-flex align-items-center">
+                            <img src="assets/dist/images/captive_portal.svg" alt="Image">
+                            All Programs
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="load-more">
+                <a href="javascript:;" title="Load more" class="d-flex align-items-center justify-content-center">Load More <img src="assets/dist/images/add.svg" alt="Load more"></a>
               </div>
             </div>
           </div>
-           <div class="form-wrapper d-none d-md-block">
-             <form>
-               <div>
-                 <label class="form-label">Publication type</label>
-                 <select class="form-select">
-                    <option selected>All types</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-               </div>
-               <div>
-                 <label class="form-label">Pride Inclusion Program</label>
-                 <select class="form-select">
-                    <option selected>All program</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-               </div>
-               <div>
-                 <label class="form-label">Sort by</label>
-                 <select class="form-select">
-                    <option selected>Newest First</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-               </div>
-               <div class="action-area">
-                 <button type="reset" class="btn btn-sm btn-gray btn-post-icon">Cancel<img src="assets/dist/images/cancel.svg" alt="arrow forward"></button>
-                 <button type="submit" class="btn btn-sm btn-green btn-post-icon">Submit<img src="assets/dist/images/check_circle.svg" alt="arrow forward"></button>
-               </div>
-             </form>
-           </div>   
-           </div>
-         </div>
-
-         <div class="new-resource-list">
-         <h2 class="h4">Newest Members’ Resources</h2>
-         <div class="resources-list d-md-flex flex-wrap">
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-6.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-7.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-8.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-6.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-7.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-8.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-6.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-7.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-8.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-6.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-7.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-           <div class="item new-resource">
-             <div class="d-flex">
-               <div class="new-resource-img">
-                 <a href="javascript:;" title="Resource item title lorem ipsum dolor">
-                   <img src="assets/dist/images/img-8.jpg" alt="Image">
-                 </a>
-               </div>
-               <div class="new-resource-content">
-                <div class="pip-separator raibow"></div>
-                 <h3 class="h6"><a href="javascript:;" title="Resource item title lorem ipsum dolor">Resource item title lorem ipsum dolor</a></h3>
-                 <ul>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/description.svg" alt="Image">
-                      Factsheet
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:;" title="Link" class="d-flex align-items-center">
-                      <img src="assets/dist/images/captive_portal.svg" alt="Image">
-                      All Programs
-                    </a>
-                  </li>
-                 </ul>
-               </div>   
-             </div>
-           </div>
-         </div>
-         <div class="load-more">
-           <a href="javascript:;" title="Load more" class="d-flex align-items-center justify-content-center">Load More <img src="assets/dist/images/add.svg" alt="Load more"></a>
-         </div>
-       </div>   
-      </div>
-       
-     </div>
-   </section>  
+          
+        </div>
+      </section>
+      
+    </main>
    <footer>
      <div class="container">
        <div class="top-footer d-flex flex-wrap">

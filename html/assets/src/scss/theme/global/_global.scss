@@ -15,7 +15,7 @@
 body{
     font-family: $font;
     line-height: 1.5;
-    color: $div-900;
+    color: $gray-900;
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   margin: 0 0 18px;
@@ -68,6 +68,7 @@ svg{
 p{
     font-size: clamp(rem-calc(15), 0.19vw + 0.8915rem, rem-calc(17));
     margin-bottom: 18px;
+    color: $gray-700;
     &:last-child{
         margin-bottom: 0;
     }

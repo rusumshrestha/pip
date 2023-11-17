@@ -36,20 +36,43 @@
 }
 
 .article-sidebar{
-	width: 414px;
+	margin-bottom: 36px;
+	width: 100%;
+	@include breakpoint(lg){
+		width: 375px;
+		margin-bottom: 0;
+	}
+	@include breakpoint(xl){
+		width: 414px;
+	}
 }
 .article-content{
-	width: 924px;
-	padding-left: 120px;
+	width: 100%;
+	@include breakpoint(lg){
+		width: 549px;
+    	padding-left: 60px;	
+	}
+	@include breakpoint(xl){
+		width: 714px;
+		padding-left: 120px;	
+	}
+	@include breakpoint(xxl){
+		width: 924px;
+	}
 	figure{
-		margin-left: -120px;
+		@include breakpoint(lg){
+			margin-left: -120px;
+		}
 	}
 	blockquote{
-		margin-left: -84px;
-		max-width: 760px;
+		@include breakpoint(lg){
+			margin-left: -84px;
+			max-width: 760px;
+		}
 	}
 }
 .article-sidebar-meta-data{
+	padding: 15px 18px;
 	.article-date {
 		color: $gray-700;
 		font-size: rem-calc(13);
@@ -87,7 +110,7 @@
 		}
 		span{
 			font-size: rem-calc(14);
-			width: 320px;
+			max-width: 320px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -107,14 +130,13 @@
 	}
 }
 .article-content{
+	*{
+		color: $gray-900;
+	}
 	h1,h2,h3,h4,h5,h6{
 		font-weight: $bold;
 	}
-	h3{
-		font-size: rem-calc(21);
-	}
 	p,li{
-		font-size: rem-calc(17);
 		line-height: 1.75;
 	}
 	a{
@@ -129,14 +151,24 @@
 			margin-bottom: 0;
 		}
 	}
+	ol,ul{
+		li{
+			position: relative;
+			font-size: clamp(rem-calc(15), 0.19vw + 0.8915rem, rem-calc(17));
+			&:before{
+				position: absolute;
+				left: 0;
+				top: 11px;
+			}
+		}
+	}
 	ul {
 	  list-style-type: none; 
 		  li { 
+	  		padding: 0 0 0 24px;
 			&:before {
-			  border-radius: 50%;
 			  content: "";
-			  display: inline-block;
-			  margin-right: 16px;
+			  border-radius: 50%;
 			  height: 8px;
 			  width: 8px;
 			}
@@ -157,11 +189,11 @@
 		list-style-type: none; 
 		counter-reset: li;
 		  li { 
+			padding: 0 0 0 36px;
 			counter-increment: li;
 			&:before {
   				content: counter(li, decimal-leading-zero)'. ';
-				display: inline-block;
-				margin-right: 16px;
+  				top: 0;
 			}
 			ol{
 				counter-reset: sub-li;
@@ -185,8 +217,8 @@
 	}
 	blockquote{
 		@include border(left,4px,solid,transparent);
-		padding-left: 78px;
-		font-size: rem-calc(27);
+		padding-left: clamp(rem-calc(40), 3.62vw + 1.617rem, rem-calc(78));
+		font-size: clamp(rem-calc(18), 0.85vw + 0.9225rem, rem-calc(27));
 		line-height: 1.75;
 		font-style: italic;
 		font-weight: $bold;
@@ -197,9 +229,10 @@
 			font-style: normal;
 			position: absolute;
 			line-height: 1;
-			left:40px;
+			// left:40px;
+			left: clamp(rem-calc(20), 1.9vw + 0.79rem, rem-calc(40));
 			top: 0;
-			font-size: rem-calc(48);
+			font-size: clamp(rem-calc(30), 1.71vw + 1.461rem, rem-calc(48));
 		}
 	}
 	figure{
@@ -242,7 +275,7 @@
 				}
 			}
 		}
-		a{
+		a, a strong{
 			color: $div-500;
 		}
 	}
@@ -278,7 +311,7 @@
 				}
 			}
 		}
-		a{
+		a, a strong{
 			color: $hb-500;
 		}
 	}
@@ -314,7 +347,7 @@
 				}
 			}
 		}
-		a{
+		a, a strong{
 			color: $sport-500;
 		}
 	}
@@ -350,7 +383,7 @@
 				}
 			}
 		}
-		a{
+		a, a strong{
 			color: $training-500;
 		}
 	}

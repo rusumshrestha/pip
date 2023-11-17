@@ -263,16 +263,17 @@
 }
 
 .section-publication-wrap{
-	.container-md{
+	.container-lg{
 		@include breakpointMax(md){
 			padding: 0;
 		}
 	}
 	.filter-sidebar{
-		
-		margin-right: 36px;
+		padding: 0 24px 18px;
 		@include breakpoint(xl){
 			width: 275px;
+			margin-right: 36px;
+			padding: 0;
 		}
 		@include breakpoint(xxl){
 			width: 444px;
@@ -306,7 +307,10 @@
 
 
 .load-more{
-	margin-top: 48px;
+	margin: 48px 0;
+	@include breakpointMax(md){
+		margin: 48px 24px;
+	}
 	a{
 		display: block;
 		padding: 24px;

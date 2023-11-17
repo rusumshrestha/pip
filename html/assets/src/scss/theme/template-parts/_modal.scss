@@ -1,4 +1,5 @@
 .custom-modal{
+
 	.modal-dialog{
 		max-width: 1090px;
 	}
@@ -7,4 +8,10 @@
 		padding: 0;
 		background: none;
 	}
+	.modal-content{
+		background: $white;
+		padding: 24px;
+	}
 }
+
+

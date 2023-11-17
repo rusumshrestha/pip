@@ -1,6 +1,5 @@
 footer{
 	position: relative;
-	background: $div-900;
 	padding:48px 0;
 	font-size: rem-calc(13);
 	@include breakpoint(lg){
@@ -30,6 +29,9 @@ footer{
 }
 
 .site-diversity {
+	footer{
+		background: $div-900;
+	}
   footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
       color: $div-500;
     }
@@ -38,6 +40,9 @@ footer{
     }
 }
 .site-health {
+	footer{
+		background: $hb-900;
+	}
   footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
       color: $hb-500;
     }
@@ -46,6 +51,9 @@ footer{
     }
 }
 .site-sport {
+	footer{
+		background: $sport-900;
+	}
   footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
       color: $sport-500;
     }
@@ -54,6 +62,9 @@ footer{
     }
 }
 .site-training {
+	footer{
+		background: $training-900;
+	}
   footer a:hover, .top-footer-menu .footer-menu.footer-main-menu ul li a:hover, .footer-contact-area ul li a:hover{
       color: $training-500;
     }
