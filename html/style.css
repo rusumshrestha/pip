@@ -13913,6 +13913,10 @@ button.close-modal-btn img, button.close-modal-btn svg {
   background: #201521;
 }
 
+.btn-membership {
+  background: #FFFFFF;
+}
+
 header {
   position: relative;
 }
@@ -13921,6 +13925,15 @@ header:before, header:after {
   position: absolute;
   top: 0;
   bottom: 0;
+}
+header:before {
+  left: 0;
+  right: 91.67%;
+}
+header:after {
+  right: 0;
+  left: 91.67%;
+  background: #FFFFFF;
 }
 header .navbar {
   background: none;
