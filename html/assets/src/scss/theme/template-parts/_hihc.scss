@@ -1,4 +1,9 @@
 .section-hihc{
+	&.section{
+		@include breakpointMax(md){
+			padding-top: 0;
+		}
+	}
 	.h-image{
 		margin-bottom: 27px;
 		padding: 0;
@@ -30,6 +35,9 @@
 		@include breakpoint(xl){
 			width: 492px;
 		}
+		// p{
+		// 	font-size: clamp(rem-calc(15), 0.19vw + 0.8915rem,rem-calc(17));
+		// }
 		p + a{
 			margin-top: 36px;
 		}

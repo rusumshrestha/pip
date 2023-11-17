@@ -3,6 +3,9 @@
 		@include breakpointMax(md){
 			padding: 0;
 		}
+		@include breakpoint(md){
+			padding: 0 36px;
+		}
 	}
 }
 

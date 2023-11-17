@@ -1,6 +1,8 @@
 .section-video-block {
-  @include breakpointMax(lg){
-    padding: 0 0 90px;
+  &.section{
+      @include breakpointMax(lg){
+      padding: 0 0 90px;
+    }
   }
   .container-lg{
     @include breakpointMax(lg){

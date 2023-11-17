@@ -4,20 +4,13 @@
 
 .promo-banner{
 	aspect-ratio: 1/1;
-	padding: 60px 0 30px;
-	margin: 0 -18px 4px;;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	margin: 0 -18px 4px;
 	@include breakpoint(md){
 		aspect-ratio: 4/1.71;
-	}
-	@include breakpoint(lg){
-		padding: 68px 0 48px;
 		margin: 0 0 18px;
 	}
-	p{
-		color: $white;
+	img{
+		width: 100%;
 	}
 }
 
@@ -47,19 +40,9 @@
 			aspect-ratio: 16/9;
 		}
 		img,svg{
-			max-height: 40px;
 			width:auto;
 			position: relative;
 			z-index: 1;
-			@include breakpoint(xs){
-				max-height: 50px;
-			}
-			@include breakpoint(md){
-				max-height: 75px;
-			}
-			@include breakpoint(lg){
-				max-height: initial;
-			}
 		}
 	}
 	.theme-diversity{

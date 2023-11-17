@@ -77,7 +77,7 @@ $(document).ready(function() {
         responsive:{
             0:{
                 items:1,
-                stagePadding: 50,
+                stagePadding: 20,
                 margin:12,
             },
             992:{

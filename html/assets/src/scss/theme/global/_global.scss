@@ -19,14 +19,18 @@ body{
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   margin: 0 0 18px;
+  font-weight: $bold;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 h1,.h1{
     line-height: 1;
     font-size: clamp(rem-calc(45), 1.14vw + 2.5365rem, rem-calc(57));
+    font-weight: $eblack;
 }
 h2,.h2{
-        // 0.0076|19.056/1.191rem|0.76vw| 
     font-size: clamp(rem-calc(22), 0.76vw + 1.191rem, rem-calc(30));
     line-height: 1.25;
     letter-spacing: -0.3px;
@@ -36,18 +40,18 @@ h3,.h3{
     line-height: 1.25;
 }
 h4,.h4{
-    font-size: rem-calc(21);
+    font-size: clamp(rem-calc(17), 0.38vw + 0.9705rem, rem-calc(21));
     line-height: 1.5;
 
 }
 
 h5, .h5{
-    font-size: rem-calc(17);
+    font-size: clamp(rem-calc(15), 0.19vw + 0.8915rem,rem-calc(17));
     line-height: 1.5;
 }
 
 h6,.h6{
-    font-size: rme-calc(15);
+    font-size: clamp(rem-calc(13), 0.19vw + 0.7665rem,rem-calc(15));
     line-height: 1.5;
 }
 
@@ -62,15 +66,15 @@ svg{
     }
 }
 p{
-    font-size: rem-calc(15);
+    font-size: clamp(rem-calc(15), 0.19vw + 0.8915rem, rem-calc(17));
     margin-bottom: 18px;
     &:last-child{
         margin-bottom: 0;
     }
 }
 a{
-   color: $black;
-    @include transition(all,.2s,linear);
+   color: $gray-900;
+    @include transition(all,.3s,linear);
     text-decoration: none;
     &:hover{
 

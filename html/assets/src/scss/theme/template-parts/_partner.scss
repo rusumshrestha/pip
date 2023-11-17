@@ -6,3 +6,11 @@
 		}
 	}
 }
+.section-partner-wrap{
+	.title{
+		margin-bottom: 40px;
+		@include breakpoint(md){
+			margin-bottom: 54px;			
+		}
+	}
+}

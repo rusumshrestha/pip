@@ -50,6 +50,11 @@
 			width: calc(50% - 18px);
 		}
 	}
+	.member-content{
+		@include breakpointMax(md){
+			margin-top: 18px;
+		}
+	}
 	.member-title{
 		@include breakpoint(lg){
 			margin-right: 36px;
@@ -59,13 +64,13 @@
 	*{
 		color: $white;
 	}
-	h1{
-		// font-size: rem-calc(45);
-		font-weight: $eblack;
-		// @include breakpoint(xl){
-		// 	font-size: rem-calc(57);
-		// }
-	}
+	// h1{
+	// 	// font-size: rem-calc(45);
+	// 	font-weight: $eblack;
+	// 	// @include breakpoint(xl){
+	// 	// 	font-size: rem-calc(57);
+	// 	// }
+	// }
 	p{
 		font-size: rem-calc(17);
 		font-weight: $medium;

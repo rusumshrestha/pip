@@ -1,4 +1,7 @@
 .filter-sidebar{
+	[class*="bg-"]{
+		padding: 18px 24px;
+	}
 	.result{
 		font-weight: $bold;
 		font-size: rem-calc(13);
