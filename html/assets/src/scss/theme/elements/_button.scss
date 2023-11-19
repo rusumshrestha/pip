@@ -147,6 +147,27 @@ button.close-modal-btn{
         width: 48px;
     }
 }
+.btn-membership{
+    background: $white;
+    padding: 30px 24px;
+    font-size: rem-calc(15);
+    font-weight: $medium;
+    display: block;
+    height: 84px;
+    svg{
+        path{
+            @include transition(all,.3s,linear);
+        }
+    }
+}
+.login-btn{
+    padding: 30px 24px;
+    font-size: rem-calc(15);
+    font-weight: $medium;
+    color: $white;
+    display: block;
+    line-height: 1.6;
+}
 
 .modal-backdrop.show{
     opacity: .9;
@@ -156,23 +177,78 @@ button.close-modal-btn{
     .modal-backdrop{
         background: $div-900;
     }
+    .login-btn{
+        background: $div-500;
+        &:hover{
+            background: $div-900;
+        }
+    }
+    .btn-membership{
+        svg{
+            path{
+                fill: $div-500;
+            }
+        }
+    }
 }
 .site-health{
     .modal-backdrop{
         background: $hb-900;
+    }
+    .login-btn{
+        background: $hb-500;
+        &:hover{
+            background: $hb-900;
+        }
+    }
+    .btn-membership{
+        svg{
+            path{
+                fill: $hb-500;
+            }
+        }
     }
 }
 .site-sport{
     .modal-backdrop{
         background: $sport-900;
     }
+    .login-btn{
+        background: $sport-500;
+        &:hover{
+            background: $sport-900;
+        }
+    }
+    .btn-membership{
+        svg{
+            path{
+                fill: $sport-500;
+            }
+        }
+    }
 }
 .site-training{
     .modal-backdrop{
         background: $training-900;
     }
+    .login-btn{
+        background: $training-500;
+        &:hover{
+            background: $training-900;
+        }
+    }
+    .btn-membership{
+        svg{
+            path{
+                fill: $training-500;
+            }
+        }
+    }
 }
 
-.btn-membership{
-    background: $white;
+
+.search-area{
+    a{
+        padding: 33px 27px;
+    }
 }

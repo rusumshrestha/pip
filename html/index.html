@@ -14,11 +14,11 @@
   <body class="site-diversity">
     <header>
       <div class="container">
-        <div class="navbar navbar-expand-sm bsnav" style="position: static;">
-          <div class="logo-area d-flex align-items-center">
-            <img src="assets/dist/images/switcher.svg" alt="Switcher">
-          </div>
-          <div class="collapse navbar-collapse">
+        <div class="navbar navbar-expand bsnav align-items-stretch justify-content-between" style="position: static;">
+          <div class="brand-area collapse navbar-collapse">
+            <div class="logo-area d-flex align-items-center">
+              <img src="assets/dist/images/switcher.svg" alt="Switcher">
+            </div>
             <ul class="navbar-nav navbar-mobile mr-0">
               <li class="nav-item dropdown megamenu">
                 <h1>
@@ -26,47 +26,38 @@
                     <img src="assets/dist/images/logo.svg" alt="PIP"> <i class="caret"></i>
                   </a>
                 </h1>
-                <div class="navbar-nav in bg-gray-200">
+                <div class="navbar-nav">
                   <div class="container">
-                    <div class="row">
-                      <div class="col-md-7">
-                        <div class="promo-banner">
+                    <div class="d-flex flex-wrap">
+                      <div class="promo-banner">
+                        <a href="javascript:;" title="Title">
                           <img src="assets/dist/images/banner-img.jpg" alt="Banner" class="d-none d-sm-block">
                           <img src="assets/dist/images/banner-img-mobile.jpg" alt="Banner" class="d-sm-none">
+                        </a>
+                      </div>
+                      <div class="program-list d-flex flex-wrap">
+                        <div class="theme-diversity">
+                            <a href="javascript:;" title="Diversity">
+                              <img src="assets/dist/images/logo-diversity.jpg" alt="Diversity">
+                            </a>
+                        </div>
+                        <div class="theme-sport">
+                            <a href="javascript:;" title="Pride in Sport">
+                              <img src="assets/dist/images/logo-sport.jpg" alt="Pride in Sport">
+                            </a>
+                        </div>
+                        <div class="theme-health">
+                            <a href="javascript:;" title="Health wellbeing">
+                              <img src="assets/dist/images/logo-health.jpg" alt="Health Wellbeing">
+                            </a>
+                        </div>
+                        <div class="theme-training">
+                            <a href="javascript:;" title="Pride Training">
+                              <img src="assets/dist/images/logo-training.jpg" alt="Pride Training">
+                            </a>
                         </div>
                       </div>
-                      <div class="col-md-5">
-                        <div class="row program-list">
-                          <div class="col-md-6">
-                            <div class="theme-diversity">
-                              <a href="javascript:;" title="Diversity">
-                                <img src="assets/dist/images/logo-diversity.jpg" alt="Diversity" class="w-100">
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="theme-sport">
-                              <a href="javascript:;" title="Pride in Sport">
-                                <img src="assets/dist/images/logo-sport.jpg" alt="Pride in Sport" class="w-100">
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="theme-health">
-                              <a href="javascript:;" title="Health wellbeing">
-                                <img src="assets/dist/images/logo-health.jpg" alt="Health Wellbeing" class="w-100">
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="theme-training">
-                              <a href="javascript:;" title="Pride Training">
-                                <img src="assets/dist/images/logo-training.jpg" alt="Pride Training" class="w-100">
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </div>
                     <div class="award-wrap">
                       <ul class="award-list d-flex flex-wrap">
@@ -107,7 +98,7 @@
               </li>
             </ul>
           </div>
-          <div class="collapse navbar-collapse justify-content-sm-end">
+          <div class="collapse navbar-collapse d-none d-xl-flex">
             <ul class="navbar-nav navbar-mobile mr-0">
               <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#events.html">Events</a></li>
@@ -171,11 +162,13 @@
             </ul>
           </div>
           <div class="search-user-action-area d-flex align-items-center">
-            <div class="search-area">
-              <a href="javascript:;" title="Search">Search</a>
+            <div class="search-area d-none d-md-block p-0">
+              <a href="javascript:;" title="Search">
+                <img src="assets/dist/images/search.svg" alt="Search">
+              </a>
             </div>
-            <div class="login-area">
-              <a href="javascript:;" title="Login" class="btn">Login</a>
+            <div class="login-area d-none d-md-block ">
+              <a href="javascript:;" title="Login" class="login-btn">Login</a>
             </div>
             <div class="membership-area">
               <a href="javascript:;" title="Membership" class="btn-post-icon btn-membership">Membership <img src="assets/dist/images/arrow_forward.svg" alt="arrow forward"></a>
@@ -184,12 +177,184 @@
         </div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <nav class="container">
+        <div class="menus">
+          <ul class="d-flex align-items-center justify-content-between text-center">
+            <li>
+              <a href="#">
+                <img src="assets/dist/images/home.svg" alt="Icon">
+                <span class="d-block">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/dist/images/events.svg" alt="Icon">
+                <span class="d-block">Events</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/dist/images/awards.svg" alt="Icon">
+                <span class="d-block">Awards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/dist/images/index.svg" alt="Icon">
+                <span class="d-block">Index</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                
+              </a>
+              <div class="btn-group dropup">
+                <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" >
+                <img src="assets/dist/images/resources.svg" alt="Icon">
+                <span class="d-block">Resources</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="javascript:;" class="close-dropdown">Close resource</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="btn-group dropup">
+                <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" >
+                <img src="assets/dist/images/menu.svg" alt="Icon">  
+                <span class="d-block">Menu</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="javascript:;" class="close-dropdown">Close menu</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">Title</a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
     <main>
       <section class="section-promo-banner bg-gray-200">
         <div class="container-lg">
           <div class="promo-banner">
-            <img src="assets/dist/images/banner-img.jpg" alt="Banner" class="d-none d-sm-block">
-            <img src="assets/dist/images/banner-img-mobile.jpg" alt="Banner" class="d-sm-none">
+            <a href="javascript:;" title="Title">
+              <img src="assets/dist/images/banner-img.jpg" alt="Banner" class="d-none d-sm-block">
+              <img src="assets/dist/images/banner-img-mobile.jpg" alt="Banner" class="d-sm-none">
+            </a>
           </div>
           <div class="program-list d-flex flex-wrap">
             <div class="theme-diversity">
@@ -428,6 +593,11 @@
         $(this).children().trigger('play');
       
       });
+      $( ".close-dropdown" ).on( "click", function() {
+        $( this ).parents('.dropdown-menu').toggleClass( 'show' );
+      });
+
+
     </script>
   </body>
 </html>
