@@ -14167,14 +14167,14 @@ header .navbar-expand .brand-area + .navbar-collapse {
   inset: calc(90vh + 77px) -1px 77px -1px !important;
   border-radius: 0;
   box-shadow: none;
-  padding: 18px;
+  padding: 75px 18px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
   transition: inset 0.5s linear;
 }
 .mobile-menu .dropup .dropdown-menu.show, .mobile-menu .btn-group .dropdown-menu.show {
-  inset: calc(-8vh + 77px) -1px 77px -1px !important;
+  inset: calc(-100vh + 146px) -1px 77px -1px !important;
 }
 .mobile-menu ul li {
   width: 57px;
@@ -14210,6 +14210,25 @@ header .navbar-expand .brand-area + .navbar-collapse {
   transform: translate3d(0, 0, 0);
   top: 0;
   bottom: 78px;
+}
+@keyframes slideUpIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100vh + 70px));
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+.slideUpIn {
+  animation-name: slideUpIn;
+}
+
+.animation {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
 @media (max-width: 767px) {

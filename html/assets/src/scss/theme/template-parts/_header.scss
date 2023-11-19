@@ -199,17 +199,17 @@ header{
 			height: calc(100vh - 78px);
 			// inset: calc(-100vh + 77px) -1px 77px -1px !important;
 			// inset: calc(-8vh + 77px) -1px 77px -1px !important;
-		    // transform: none !important;
 			inset: calc(90vh + 77px) -1px 77px -1px !important;
+		    // transform: none !important;
 		    border-radius: 0;
 		    box-shadow: none;
-		    padding: 18px;
+		    padding: 75px 18px;
 		    overflow-y: scroll;
 		    display: flex;
 		    flex-direction: column;
 		    transition: inset .5s linear;
 		    &.show{
-		    	inset: calc(-8vh + 77px) -1px 77px -1px !important;
+		    	inset: calc(-100vh + 146px) -1px 77px -1px !important;
 		    }
 		}
 	}
@@ -252,4 +252,43 @@ header{
     transform: translate3d(0,0,0);
     top: 0;
     bottom: 78px;
+}
+
+ @-webkit-keyframes slideUpIn {
+	 0% {
+		 
+		 -webkit-transform: translateY(0);
+	 }
+	 100% {
+		 
+		 -webkit-transform: translateY(calc(-100vh + 70px));
+	 }
+	 
+	 0% {
+		 -webkit-transform: translateY(0);
+	 }
+}
+
+@keyframes slideUpIn {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(calc(-100vh + 70px));
+	}
+	0% {
+		transform: translateY(0);
+	}
+}
+
+.slideUpIn {
+	-webkit-animation-name: slideUpIn;
+	animation-name: slideUpIn;
+}
+
+.animation{
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
